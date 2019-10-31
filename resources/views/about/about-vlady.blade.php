@@ -11,7 +11,7 @@
 @section('content')
 <!-- {{-- copplapse menu --}} -->
 <section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url();"
-	data-stellar-background-ratio="0.5">
+	data-stellar-background-ratio="1">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 ">
@@ -96,7 +96,7 @@
 <!-- {{-- phần khách hàng --}} -->
 <section class="ftco-section testimony-section"
 	style="background-image: url('{{ asset('img/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.png') }} '); font-family: Roboto,serif;"
-	data-stellar-background-ratio="0.5">
+	data-stellar-background-ratio="1">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row justify-content-center mb-5">

@@ -182,7 +182,7 @@
 <!-- phần thông số -->
 <section class="ftco-counter ftco-bg-dark img" id="section-counter"
 	style="background-image: url(' {{ asset('img/black-and-white-sky-girl-photography-female-love-1373917-pxhere.com.jpg') }} '); font-family: Roboto;"
-	data-stellar-background-ratio="0.5">
+	data-stellar-background-ratio="1">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row justify-content-center">
@@ -511,7 +511,7 @@
 <!--khách hàng nói-->
 <section class="ftco-section testimony-section"
 	style="background-image: url('{{ asset('img/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.png') }} '); font-family: Roboto;"
-	data-stellar-background-ratio="0.5">
+	data-stellar-background-ratio="1">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row justify-content-center mb-5">
