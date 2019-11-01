@@ -532,7 +532,7 @@
                             <div class="item">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('images/vlady-logo-1024x726.png ')">
+                                        style="background-image: url('images/icon/vlady-logo-1024x726.png ')">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="icon-quote-left"></i>
                                         </span>
@@ -552,7 +552,7 @@
                             <div class="item">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('images/vlady-logo-1024x726.png ')">
+                                        style="background-image: url('images/icon/vlady-logo-1024x726.png ')">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="icon-quote-left"></i>
                                         </span>
@@ -570,7 +570,7 @@
                             <div class="item">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('images/vlady-logo-1024x726.png ')">
+                                        style="background-image: url('images/icon/vlady-logo-1024x726.png ')">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="icon-quote-left"></i>
                                         </span>
@@ -588,7 +588,7 @@
                             <div class="item">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('images/vlady-logo-1024x726.png ')">
+                                        style="background-image: url('images/icon/vlady-logo-1024x726.png ')">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="icon-quote-left"></i>
                                         </span>
