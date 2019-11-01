@@ -75,7 +75,7 @@
 
 {{-- Phần phản hồi của học viên --}}
 <section class="ftco-section testimony-section"
-    style="background-image: url('{{ asset('img/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.png') }} '); font-family: Roboto;"
+    style="background-image: url('{{ asset('images/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.png') }} '); font-family: Roboto;"
     data-stellar-background-ratio="1">
     <div class="overlay"></div>
     <div class="container">
@@ -98,7 +98,7 @@
                             <div class="item">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('{{ asset('img/vlady-logo-1024x726.png') }} ')">
+                                        style="background-image: url('{{ asset('images/vlady-logo-1024x726.png') }} ')">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="icon-quote-left"></i>
                                         </span>
@@ -118,7 +118,7 @@
                             <div class="item">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('{{ asset('img/vlady-logo-1024x726.png') }} ')">
+                                        style="background-image: url('{{ asset('images/vlady-logo-1024x726.png') }} ')">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="icon-quote-left"></i>
                                         </span>
@@ -136,7 +136,7 @@
                             <div class="item">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('{{ asset('img/vlady-logo-1024x726.png') }} ')">
+                                        style="background-image: url('{{ asset('images/vlady-logo-1024x726.png') }} ')">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="icon-quote-left"></i>
                                         </span>
@@ -154,7 +154,7 @@
                             <div class="item">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('{{ asset('img/vlady-logo-1024x726.png') }} ')">
+                                        style="background-image: url('{{ asset('images/vlady-logo-1024x726.png') }} ')">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="icon-quote-left"></i>
                                         </span>
@@ -195,7 +195,8 @@
 
 @section('form')
 {{-- Form đăng kí học ngay --}}
-<section class="ftco-section contact-section" id="dang-ki-hoc" style="background-image: url('{{ asset('img/') }} ') ">
+<section class="ftco-section contact-section" id="dang-ki-hoc"
+    style="background-image: url('{{ asset('images/') }} ') ">
     <div class="container">
         <div class="row">
             <h2 class="mx-auto text-center h2 font-weight-bold">Đăng Kí Ngay</h2>

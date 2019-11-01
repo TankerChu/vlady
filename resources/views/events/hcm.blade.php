@@ -4,7 +4,7 @@
 <!-- {{-- banner --}} -->
 <section class="hero-wrap js-fullheight">
     <div class="overlay"
-        style="background-image: url('{{ asset('img/banner-1.jpg') }} '); background-repeat: no-repeat;"
+        style="background-image: url('{{ asset('images/banner-1.jpg') }} '); background-repeat: no-repeat;"
         data-stellar-background-ratio="1"></div>
 </section>
 <!-- {{-- hết banner --}} -->

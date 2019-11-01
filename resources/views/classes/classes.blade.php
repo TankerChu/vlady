@@ -2,7 +2,7 @@
 
 @section('banner')
 <section class="hero-wrap js-fullheight">
-	<div class="overlay" style="background-image: url('{{ asset('img/banner-1.jpg') }} ');"
+	<div class="overlay" style="background-image: url('{{ asset('images/banner-1.jpg') }} ');"
 		data-stellar-background-ratio="1"></div>
 </section>
 @endsection
