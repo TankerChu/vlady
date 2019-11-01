@@ -9788,7 +9788,7 @@ h5,
 .ftco-navbar-light {
     background: transparent !important;
     position: absolute;
-    top: 0;
+    top: -100px;
     left: 0;
     right: 0;
     z-index: 3;
@@ -12550,7 +12550,7 @@ textarea.form-control {
     /* Lock location always on the scree */
     bottom: 25px;
     /* Set to the bottom */
-    left: 25px;
+    right: 25px;
     /* Set to the right */
     margin: 30px;
     /* Add space around background */
