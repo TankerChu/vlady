@@ -4,9 +4,9 @@ Route::get('/', 'FrontendController@index')->name('home-page');
 
 
 // route cho phần giới thiệu
-Route::view('gioi-thieu/ve-vlady', 'about.about-vlady')->name('about-vlady');
+Route::view('ve-vlady', 'about.vlady')->name('about-vlady');
 
-Route::view('gioi-thieu/ve-nhunglady', 'about.about-nhunglady')->name('about-nhunglady');
+Route::view('ve-nhunglady', 'about.nhunglady')->name('about-nhunglady');
 
 
 // route liên hệ

@@ -53,7 +53,6 @@
              margin: 0,
              animateOut: 'fadeOut',
              animateIn: 'fadeIn',
-             touch: true,
              stagePadding: 0,
              nav: false,
              navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
@@ -75,7 +74,7 @@
 
      $('nav .dropdown').hover(function() {
          var $this = $(this);
-         //      timer;
+         // 	 timer;
          // clearTimeout(timer);
          $this.addClass('show');
          $this.find('> a').attr('aria-expanded', true);
@@ -103,8 +102,7 @@
              var $w = $(this),
                  st = $w.scrollTop(),
                  navbar = $('.ftco_navbar'),
-                 sd = $('.js-scroll-wrap'),
-                 lastScrollTop = 0;
+                 sd = $('.js-scroll-wrap');
 
              if (st > 150) {
                  if (!navbar.hasClass('scrolled')) {
@@ -137,6 +135,7 @@
          });
      };
      scrollWindow();
+
 
      var counter = function() {
 
@@ -258,6 +257,14 @@
 
          fixedContentPos: false
      });
+
+
+     $('.appointment_date').datepicker({
+         'format': 'm/d/yyyy',
+         'autoclose': true
+     });
+
+     $('.appointment_time').timepicker();
 
 
 
