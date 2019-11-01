@@ -32,6 +32,7 @@
 </head>
 
 <body>
+
 	@include('layouts/header')
 
 	@yield('banner')
@@ -42,8 +43,8 @@
 
 	@include('layouts/footer')
 
-	<a class="lgscreenphone phonelink" href="https://www.youtube.com/channel/UCQQ9KdZl80R78hZjb8Q_3NQ"><img
-			class="phoneicon" src="images/icon/pngkey.com-phone-icon-png-137208.png"></a>
+	<a class="lgscreenphone phonelink" href="{{route('contact-us')}}"><img class="phoneicon"
+			src="images/icon/pngkey.com-phone-icon-png-137208.png"></a>
 	<a class="mbscreenphone phonelink" href="tel:0946169779"><img class="phoneicon"
 			src="images/icon/pngkey.com-phone-icon-png-137208.png"></a>
 	<!-- loader -->
@@ -53,23 +54,23 @@
 				stroke="#F96D00" /></svg></div>
 
 
-	<script src="{{ asset('js/jquery.min.js') }}"></script>
-	<script src="{{ asset('js/jquery-migrate-3.0.1.min.js') }}"></script>
-	<script src="{{ asset('js/popper.min.js') }}"></script>
-	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-	<script src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
-	<script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
-	<script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
-	<script src="{{ asset('js/flickity.pkgd.min.js') }}"></script>
-	<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-	<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-	<script src="{{ asset('js/aos.js') }}"></script>
-	<script src="{{ asset('js/jquery.animateNumber.min.js') }}"></script>
-	<script src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
-	<script src="{{ asset('js/jquery.timepicker.min.js') }}"></script>
-	<script src="{{ asset('js/scrollax.min.js') }}"></script>
+	<script src="{{ asset('js/jquery.min.js')}}"></script>
+	<script src="{{ asset('js/jquery-migrate-3.0.1.min.js')}}"></script>
+	<script src="{{ asset('js/popper.min.js')}}"></script>
+	<script src="{{ asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{ asset('js/jquery.easing.1.3.js')}}"></script>
+	<script src="{{ asset('js/jquery.waypoints.min.js')}}"></script>
+	<script src="{{ asset('js/jquery.stellar.min.js')}}"></script>
+	<script src="{{ asset('js/owl.carousel.min.js')}}"></script>
+	<script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{ asset('js/aos.js')}}"></script>
+	<script src="{{ asset('js/jquery.animateNumber.min.js')}}"></script>
+	<script src="{{ asset('js/bootstrap-datepicker.js')}}"></script>
+	<script src="{{ asset('js/jquery.timepicker.min.js')}}"></script>
+	<script src="{{ asset('js/scrollax.min.js')}}"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
 	</script>
+	<script src="{{ asset('js/flickity.pkgd.min.js')}}"></script>
 	<script src="https://unpkg.com/flickity-bg-lazyload@1/bg-lazyload.js"></script>
 	<script src="{{ asset('js/main-front.js') }}"></script>
 	@yield('js')
