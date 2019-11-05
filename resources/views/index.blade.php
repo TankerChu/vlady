@@ -6,6 +6,8 @@
         <div class="fs-carousel"
             data-flickity='{ "draggable": true , "wrapAround": true , "pauseAutoPlayOnHover": false, "contain": true, "bgLazyLoad": true }'>
             <div class="carousel-cell">
+                <div class="video-texture" style="background-image:url( {{ asset('images/texture.png') }} ); ">
+                </div>
                 <video autoplay loop>
                     <source src=" images/Sexy-Dancer-Slowly-Touching-2.webmsd.webm" type="video/webm">
                     <source src="images/Sexy-Dancer-Slowly-Touching-2.mp4.mp4" type="video/mp4">

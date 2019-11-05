@@ -12367,6 +12367,14 @@ textarea.form-control {
     display: block;
 }
 
+.video-texture{
+    background-repeat: repeat; 
+    z-index: 2; 
+    position: absolute; 
+    min-width: 100%; 
+    min-height: 100%
+}
+
 .flickity-prev-next-button {
     width: 50px;
     height: 50px;
@@ -12476,7 +12484,6 @@ textarea.form-control {
     font-weight: bold;
     font-size: 110px;
     text-shadow: 1px 1px 1px #000;
-    margin: 0 0 20px 0;
     line-height: 1em;
 }
 
@@ -12506,7 +12513,7 @@ textarea.form-control {
     text-transform: uppercase;
     padding: 10px 40px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .chat_vol2 img {
