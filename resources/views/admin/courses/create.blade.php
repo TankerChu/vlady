@@ -11,11 +11,12 @@
             @csrf
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                 <label for="name">{{ trans('cruds.course.fields.name') }}*</label>
-                <input type="text" id="name" name="name" class="form-control" value="{{ old('name', isset($course) ? $course->name : '') }}" required>
+                <input type="text" id="name" name="name" class="form-control"
+                    value="{{ old('name', isset($course) ? $course->name : '') }}" required>
                 @if($errors->has('name'))
-                    <p class="help-block">
-                        {{ $errors->first('name') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('name') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.course.fields.name_helper') }}
@@ -23,11 +24,12 @@
             </div>
             <div class="form-group {{ $errors->has('date_time') ? 'has-error' : '' }}">
                 <label for="date_time">{{ trans('cruds.course.fields.date_time') }}*</label>
-                <input type="text" id="date_time" name="date_time" class="form-control datetime" value="{{ old('date_time', isset($course) ? $course->date_time : '') }}" required>
+                <input type="text" id="date_time" name="date_time" class="form-control datetime"
+                    value="{{ old('date_time', isset($course) ? $course->date_time : '') }}" required>
                 @if($errors->has('date_time'))
-                    <p class="help-block">
-                        {{ $errors->first('date_time') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('date_time') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.course.fields.date_time_helper') }}
@@ -35,11 +37,12 @@
             </div>
             <div class="form-group {{ $errors->has('address') ? 'has-error' : '' }}">
                 <label for="address">{{ trans('cruds.course.fields.address') }}*</label>
-                <input type="text" id="address" name="address" class="form-control" value="{{ old('address', isset($course) ? $course->address : '') }}" required>
+                <input type="text" id="address" name="address" class="form-control"
+                    value="{{ old('address', isset($course) ? $course->address : '') }}" required>
                 @if($errors->has('address'))
-                    <p class="help-block">
-                        {{ $errors->first('address') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('address') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.course.fields.address_helper') }}
@@ -47,11 +50,12 @@
             </div>
             <div class="form-group {{ $errors->has('introduction') ? 'has-error' : '' }}">
                 <label for="introduction">{{ trans('cruds.course.fields.introduction') }}*</label>
-                <textarea id="introduction" name="introduction" class="form-control ckeditor">{{ old('introduction', isset($course) ? $course->introduction : '') }}</textarea>
+                <textarea id="introduction" name="introduction"
+                    class="form-control ckeditor">{{ old('introduction', isset($course) ? $course->introduction : '') }}</textarea>
                 @if($errors->has('introduction'))
-                    <p class="help-block">
-                        {{ $errors->first('introduction') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('introduction') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.course.fields.introduction_helper') }}
@@ -59,11 +63,12 @@
             </div>
             <div class="form-group {{ $errors->has('content') ? 'has-error' : '' }}">
                 <label for="content">{{ trans('cruds.course.fields.content') }}*</label>
-                <textarea id="content" name="content" class="form-control ckeditor">{{ old('content', isset($course) ? $course->content : '') }}</textarea>
+                <textarea id="content" name="content"
+                    class="form-control ckeditor">{{ old('content', isset($course) ? $course->content : '') }}</textarea>
                 @if($errors->has('content'))
-                    <p class="help-block">
-                        {{ $errors->first('content') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('content') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.course.fields.content_helper') }}
@@ -71,11 +76,12 @@
             </div>
             <div class="form-group {{ $errors->has('slug') ? 'has-error' : '' }}">
                 <label for="slug">{{ trans('cruds.course.fields.slug') }}*</label>
-                <input type="text" id="slug" name="slug" class="form-control" value="{{ old('slug', isset($course) ? $course->slug : '') }}" required>
+                <input type="text" id="slug" name="slug" class="form-control" onkeyup="ChangeToSlug();"
+                    value="{{ old('slug', isset($course) ? $course->slug : '') }}" required>
                 @if($errors->has('slug'))
-                    <p class="help-block">
-                        {{ $errors->first('slug') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('slug') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.course.fields.slug_helper') }}
@@ -84,11 +90,12 @@
             <div class="form-group {{ $errors->has('is_featured') ? 'has-error' : '' }}">
                 <label for="is_featured">{{ trans('cruds.course.fields.is_featured') }}</label>
                 <input name="is_featured" type="hidden" value="0">
-                <input value="1" type="checkbox" id="is_featured" name="is_featured" {{ old('is_featured', 0) == 1 ? 'checked' : '' }}>
+                <input value="1" type="checkbox" id="is_featured" name="is_featured"
+                    {{ old('is_featured', 0) == 1 ? 'checked' : '' }}>
                 @if($errors->has('is_featured'))
-                    <p class="help-block">
-                        {{ $errors->first('is_featured') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('is_featured') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.course.fields.is_featured_helper') }}
@@ -100,9 +107,9 @@
 
                 </div>
                 @if($errors->has('courses_cover'))
-                    <p class="help-block">
-                        {{ $errors->first('courses_cover') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('courses_cover') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.course.fields.courses_cover_helper') }}
@@ -110,11 +117,12 @@
             </div>
             <div class="form-group {{ $errors->has('video_link') ? 'has-error' : '' }}">
                 <label for="video_link">{{ trans('cruds.course.fields.video_link') }}</label>
-                <textarea id="video_link" name="video_link" class="form-control ">{{ old('video_link', isset($course) ? $course->video_link : '') }}</textarea>
+                <textarea id="video_link" name="video_link"
+                    class="form-control ">{{ old('video_link', isset($course) ? $course->video_link : '') }}</textarea>
                 @if($errors->has('video_link'))
-                    <p class="help-block">
-                        {{ $errors->first('video_link') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('video_link') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.course.fields.video_link_helper') }}
@@ -126,9 +134,9 @@
 
                 </div>
                 @if($errors->has('courses_image'))
-                    <p class="help-block">
-                        {{ $errors->first('courses_image') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('courses_image') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.course.fields.courses_image_helper') }}
@@ -143,6 +151,42 @@
 @endsection
 
 @section('scripts')
+<script>
+    function ChangeToSlug()
+    {
+        var name, slug;
+
+        //Lấy text từ thẻ input title 
+        name = document.getElementById("name").value;
+
+        //Đổi chữ hoa thành chữ thường
+        slug = name.toLowerCase();
+
+        //Đổi ký tự có dấu thành không dấu
+        slug = slug.replace(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, 'a');
+        slug = slug.replace(/é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ/gi, 'e');
+        slug = slug.replace(/i|í|ì|ỉ|ĩ|ị/gi, 'i');
+        slug = slug.replace(/ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ/gi, 'o');
+        slug = slug.replace(/ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự/gi, 'u');
+        slug = slug.replace(/ý|ỳ|ỷ|ỹ|ỵ/gi, 'y');
+        slug = slug.replace(/đ/gi, 'd');
+        //Xóa các ký tự đặt biệt
+        slug = slug.replace(/\`|\~|\!|\@|\#|\||\$|\%|\^|\&|\*|\(|\)|\+|\=|\,|\.|\/|\?|\>|\<|\'|\"|\:|\;|_/gi, '');
+        //Đổi khoảng trắng thành ký tự gạch ngang
+        slug = slug.replace(/ /gi, "-");
+        //Đổi nhiều ký tự gạch ngang liên tiếp thành 1 ký tự gạch ngang
+        //Phòng trường hợp người nhập vào quá nhiều ký tự trắng
+        slug = slug.replace(/\-\-\-\-\-/gi, '-');
+        slug = slug.replace(/\-\-\-\-/gi, '-');
+        slug = slug.replace(/\-\-\-/gi, '-');
+        slug = slug.replace(/\-\-/gi, '-');
+        //Xóa các ký tự gạch ngang ở đầu và cuối
+        slug = '@' + slug + '@';
+        slug = slug.replace(/\@\-|\-\@|\@/gi, '');
+        //In slug ra textbox có id “slug”
+        document.getElementById('slug').value = slug;
+    }
+</script>
 <script>
     Dropzone.options.coursesCoverDropzone = {
     url: '{{ route('admin.courses.storeMedia') }}',
