@@ -94,23 +94,41 @@
                     <i class="db-right"></i>
                 </span>
                 <h2 class="mb-3">Tại sao cần học kỹ năng phòng the ngay hôm nay?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Không thể phủ nhận tình dục ngày càng chiếm vị trí quan trọng trong đời sống hôn nhân, là tác nhân
+                    không thể thiếu giúp giữ lửa hôn nhân hạnh phúc viên mãn. Những xích mích xảy ra sau hôn nhân phần
+                    nhiều xuất phát từ lý do chuyện chăn gối gặp trục trặc.
+                    Chuyện phòng the là một việc rất đặc biệt. Tình dục như một mốc đánh dấu quan trọng đánh dấu quan hệ
+                    của hai người đã bước sang một cột mốc mà không mối quan hệ nào đạt đến được. Để giữ lửa tình yêu
+                    sau hôn nhân mỗi cặp vợ chồng cần phải biết cách duy trì điều thú vị trong đời sống tình dục cũng
+                    như trong cuộc sống cá nhân giữa họ và người bạn đời.
+
+                    Xã hội ngày càng hiện đại thì mỗi chúng ta cũng cần phải thay đổi bản thân để phù hợp với cuộc sống.
+                    Người phụ nữ hiện đại nhất định phải học kỹ năng phòng the, trước hết là để bản thân tự tin hơn,
+                    quyến rũ hơn đồng thời sẽ "hút hồn" được người bạn đời khiến anh ấy chỉ muốn "dính" lấy bạn như keo,
+                    không bị lay động trước bất kỳ một “bóng hồng” nào khác.
+
+                    Người phụ nữ hiện đại nên gạt bỏ những quan niệm cũ, chủ động và cởi mở hơn trong chuyện chăn gối để
+                    có đời sống tình dục thực sự thăng hoa.
+
+                    Nếu bạn sở hữu được những kỹ năng phòng the đỉnh cao thì đảm bảo đời sống tình dục của vợ chồng bạn
+                    sẽ viên mãn đến bất tận. Bạn biết rồi đấy, tình dục chiếm 70% trong việc giữ lửa hạnh phúc hôn nhân.
+                    Nếu bạn trở thành một cao thủ chốn phòng the thì cuộc sống hôn nhân của bạn cũng chẳng khác gì Bà
+                    Hoàng luôn được chàng cung phụng.
+                </p>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <h4>Về Chúng Tôi</h4>
-                    <p>Với mục đích giúp các chị em phụ nữ chạm tới đỉnh cao của nghệ thuật phòng the, các khóa học tại
-                        Học viện yêu Vlady tập trung vào phân tích chuyên sâu và hướng dẫn thực hành trực tiếp về cả tâm
-                        lý và kỹ thuật tình dục học. Chúng tôi luôn luôn đồng hành và hỗ trợ các học viên qua tư vấn
+                    <p>
+                        Học viện yêu Vlady là trung tâm đầu tiên và duy nhất trực thuộc UNESCO Việt Nam hoạt động trong
+                        lĩnh vực phụ nữ và tình dục học. Với hơn 30.000 học viên trong và ngoài nước trong suốt 6 năm
+                        hoạt động, chúng tôi tự hào là đơn vị tiên phong trong tư vấn, giảng dạy về lĩnh vực Tâm lý - Kỹ
+                        thuật tình dục học tại Việt Nam. Chúng tôi luôn luôn đồng hành và hỗ trợ các học viên qua tư vấn
                         trực tiếp và chia sẻ các kỹ năng, kinh nghiệm trên Group Facebook "NGHỆ THUẬT PHÒNG THE ĐỈNH CAO
-                        - NHUNGLADY".</p>
+                        - NHUNGLADY".
+                    </p>
                 </div>
                 <div class="col-lg-6">
                     <h4>Video Về Chúng Tôi</h4>

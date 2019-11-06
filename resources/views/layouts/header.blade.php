@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('home-page') }}"><img src="images/icon/vlady-logo-1024x726.png" alt=""
-                width="90px" height="70px"></a>
+        <a class="navbar-brand" href="{{ route('home-page') }}"><img
+                src="{{asset('images/icon/vlady-logo-1024x726.png')}}" alt="" width="90px" height="70px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
             aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
@@ -20,10 +20,10 @@
                         data-toggle="dropdown">Khóa Học Trực Tiếp</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{ route('classes') }}">Khóa Học</a>
-                        {{--  @foreach (App\Course::where('is_featured', 1)->get() as $featured)
+                        @foreach (App\Course::where('is_featured', 1)->get() as $featured)
                         <a class="dropdown-item"
                             href="{{ route('course',[$featured->slug, $featured->id]) }}">{{$featured->name}}</a>
-                        @endforeach --}}
+                        @endforeach
 
 
                     </div>

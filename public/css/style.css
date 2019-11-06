@@ -9732,12 +9732,12 @@ a.text-dark:focus {
 }
 
 body {
-    font-family: "Work Sans", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     background: #000;
     font-size: 15px;
     line-height: 1.8;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.637);
     background-size: cover;
 }
 

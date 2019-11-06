@@ -2,7 +2,7 @@
 
 @section('banner')
 <section class="hero-wrap js-fullheight">
-    {{-- Để ảnh banner của VLady hoặc ảnh nền của khóa học --}}
+    {{-- Để ảnh banner của khóa học --}}
     <div class="overlay" style="background-image: url( {{ $course->getFirstMediaUrl('courses_cover') }} );"
         data-stellar-background-ratio="1"></div>
 </section>
