@@ -20,11 +20,11 @@
                     <i class="db-right"></i>
                 </span>
                 <h2 class="mb-3"> {{ $course->name}} </h2>
-                {{-- giới thiệu và thông tin khóa học --}}
+                {{-- thông tin khóa học --}}
                 @php
                 echo $course->introduction
                 @endphp
-                {{-- hết phần giới thiệu và thông tin --}}
+                {{-- hết phần thông tin --}}
                 <a href="#dang-ki-hoc" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Đăng kí
                     học ngay</a>
             </div>

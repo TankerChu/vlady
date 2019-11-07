@@ -52,6 +52,14 @@
                     </tr>
                     <tr>
                         <th>
+                            {{ trans('cruds.course.fields.info') }}
+                        </th>
+                        <td>
+                            {!! $course->info !!}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
                             {{ trans('cruds.course.fields.content') }}
                         </th>
                         <td>

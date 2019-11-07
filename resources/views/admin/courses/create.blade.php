@@ -61,6 +61,19 @@
                     {{ trans('cruds.course.fields.introduction_helper') }}
                 </p>
             </div>
+            <div class="form-group {{ $errors->has('info') ? 'has-error' : '' }}">
+                <label for="info">{{ trans('cruds.course.fields.info') }}*</label>
+                <textarea id="info" name="info"
+                    class="form-control ckeditor">{{ old('info', isset($course) ? $course->info : '') }}</textarea>
+                @if($errors->has('info'))
+                <p class="help-block">
+                    {{ $errors->first('info') }}
+                </p>
+                @endif
+                <p class="helper-block">
+                    {{ trans('cruds.course.fields.info_helper') }}
+                </p>
+            </div>
             <div class="form-group {{ $errors->has('content') ? 'has-error' : '' }}">
                 <label for="content">{{ trans('cruds.course.fields.content') }}*</label>
                 <textarea id="content" name="content"
@@ -77,7 +90,7 @@
             <div class="form-group {{ $errors->has('slug') ? 'has-error' : '' }}">
                 <label for="slug">{{ trans('cruds.course.fields.slug') }}*</label>
                 <input type="text" id="slug" name="slug" class="form-control" onkeyup="ChangeToSlug();"
-                    value="{{ old('slug', isset($course) ? $course->slug : '') }}" required>
+                    onclick="ChangeToSlug();" value="{{ old('slug', isset($course) ? $course->slug : '') }}" required>
                 @if($errors->has('slug'))
                 <p class="help-block">
                     {{ $errors->first('slug') }}
@@ -153,39 +166,39 @@
 @section('scripts')
 <script>
     function ChangeToSlug()
-    {
-        var name, slug;
-
-        //Lấy text từ thẻ input title 
-        name = document.getElementById("name").value;
-
-        //Đổi chữ hoa thành chữ thường
-        slug = name.toLowerCase();
-
-        //Đổi ký tự có dấu thành không dấu
-        slug = slug.replace(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, 'a');
-        slug = slug.replace(/é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ/gi, 'e');
-        slug = slug.replace(/i|í|ì|ỉ|ĩ|ị/gi, 'i');
-        slug = slug.replace(/ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ/gi, 'o');
-        slug = slug.replace(/ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự/gi, 'u');
-        slug = slug.replace(/ý|ỳ|ỷ|ỹ|ỵ/gi, 'y');
-        slug = slug.replace(/đ/gi, 'd');
-        //Xóa các ký tự đặt biệt
-        slug = slug.replace(/\`|\~|\!|\@|\#|\||\$|\%|\^|\&|\*|\(|\)|\+|\=|\,|\.|\/|\?|\>|\<|\'|\"|\:|\;|_/gi, '');
-        //Đổi khoảng trắng thành ký tự gạch ngang
-        slug = slug.replace(/ /gi, "-");
-        //Đổi nhiều ký tự gạch ngang liên tiếp thành 1 ký tự gạch ngang
-        //Phòng trường hợp người nhập vào quá nhiều ký tự trắng
-        slug = slug.replace(/\-\-\-\-\-/gi, '-');
-        slug = slug.replace(/\-\-\-\-/gi, '-');
-        slug = slug.replace(/\-\-\-/gi, '-');
-        slug = slug.replace(/\-\-/gi, '-');
-        //Xóa các ký tự gạch ngang ở đầu và cuối
-        slug = '@' + slug + '@';
-        slug = slug.replace(/\@\-|\-\@|\@/gi, '');
-        //In slug ra textbox có id “slug”
-        document.getElementById('slug').value = slug;
-    }
+{
+    var title, slug;
+ 
+    //Lấy text từ thẻ input title 
+    title = document.getElementById("title").value;
+ 
+    //Đổi chữ hoa thành chữ thường
+    slug = title.toLowerCase();
+ 
+    //Đổi ký tự có dấu thành không dấu
+    slug = slug.replace(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, 'a');
+    slug = slug.replace(/é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ/gi, 'e');
+    slug = slug.replace(/i|í|ì|ỉ|ĩ|ị/gi, 'i');
+    slug = slug.replace(/ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ/gi, 'o');
+    slug = slug.replace(/ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự/gi, 'u');
+    slug = slug.replace(/ý|ỳ|ỷ|ỹ|ỵ/gi, 'y');
+    slug = slug.replace(/đ/gi, 'd');
+    //Xóa các ký tự đặt biệt
+    slug = slug.replace(/\`|\~|\!|\@|\#|\||\$|\%|\^|\&|\*|\(|\)|\+|\=|\,|\.|\/|\?|\>|\<|\'|\"|\:|\;|_/gi, '');
+    //Đổi khoảng trắng thành ký tự gạch ngang
+    slug = slug.replace(/ /gi, " - ");
+    //Đổi nhiều ký tự gạch ngang liên tiếp thành 1 ký tự gạch ngang
+    //Phòng trường hợp người nhập vào quá nhiều ký tự trắng
+    slug = slug.replace(/\-\-\-\-\-/gi, '-');
+    slug = slug.replace(/\-\-\-\-/gi, '-');
+    slug = slug.replace(/\-\-\-/gi, '-');
+    slug = slug.replace(/\-\-/gi, '-');
+    //Xóa các ký tự gạch ngang ở đầu và cuối
+    slug = '@' + slug + '@';
+    slug = slug.replace(/\@\-|\-\@|\@/gi, '');
+    //In slug ra textbox có id “slug”
+    document.getElementById('slug').value = slug;
+}
 </script>
 <script>
     Dropzone.options.coursesCoverDropzone = {

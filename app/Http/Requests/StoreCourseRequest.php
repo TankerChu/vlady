@@ -32,6 +32,9 @@ class StoreCourseRequest extends FormRequest
             'introduction'    => [
                 'required',
             ],
+            'info'            => [
+                'required',
+            ],
             'content'         => [
                 'required',
             ],
