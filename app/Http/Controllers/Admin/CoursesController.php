@@ -68,6 +68,9 @@ class CoursesController extends Controller
 
                 return '';
             });
+            $table->editColumn('video_link', function ($row) {
+                return $row->video_link ? $row->video_link : "";
+            });
             $table->editColumn('courses_image', function ($row) {
                 if (!$row->courses_image) {
                     return '';
@@ -80,9 +83,6 @@ class CoursesController extends Controller
                 }
 
                 return implode(' ', $links);
-            });
-            $table->editColumn('video_link', function ($row) {
-                return $row->video_link ? $row->video_link : "";
             });
 
             $table->rawColumns(['actions', 'placeholder', 'is_featured', 'courses_cover', 'courses_image']);

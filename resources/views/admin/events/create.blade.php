@@ -11,11 +11,12 @@
             @csrf
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                 <label for="name">{{ trans('cruds.event.fields.name') }}*</label>
-                <input type="text" id="name" name="name" class="form-control" value="{{ old('name', isset($event) ? $event->name : '') }}" required>
+                <input type="text" id="name" name="name" class="form-control"
+                    value="{{ old('name', isset($event) ? $event->name : '') }}" required>
                 @if($errors->has('name'))
-                    <p class="help-block">
-                        {{ $errors->first('name') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('name') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.event.fields.name_helper') }}
@@ -23,11 +24,12 @@
             </div>
             <div class="form-group {{ $errors->has('location_name') ? 'has-error' : '' }}">
                 <label for="location_name">{{ trans('cruds.event.fields.location_name') }}*</label>
-                <input type="text" id="location_name" name="location_name" class="form-control" value="{{ old('location_name', isset($event) ? $event->location_name : '') }}" required>
+                <input type="text" id="location_name" name="location_name" class="form-control"
+                    value="{{ old('location_name', isset($event) ? $event->location_name : '') }}" required>
                 @if($errors->has('location_name'))
-                    <p class="help-block">
-                        {{ $errors->first('location_name') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('location_name') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.event.fields.location_name_helper') }}
@@ -35,11 +37,12 @@
             </div>
             <div class="form-group {{ $errors->has('address') ? 'has-error' : '' }}">
                 <label for="address">{{ trans('cruds.event.fields.address') }}*</label>
-                <textarea id="address" name="address" class="form-control " required>{{ old('address', isset($event) ? $event->address : '') }}</textarea>
+                <textarea id="address" name="address" class="form-control "
+                    required>{{ old('address', isset($event) ? $event->address : '') }}</textarea>
                 @if($errors->has('address'))
-                    <p class="help-block">
-                        {{ $errors->first('address') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('address') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.event.fields.address_helper') }}
@@ -50,22 +53,24 @@
                 <select id="city" name="city" class="form-control" required>
                     <option value="" disabled>{{ trans('global.pleaseSelect') }}</option>
                     @foreach(App\Event::CITY_SELECT as $key => $label)
-                        <option value="{{ $key }}" {{ old('city', 1) === (string)$key ? 'selected' : '' }}>{{ $label }}</option>
+                    <option value="{{ $key }}" {{ old('city', 1) === (string)$key ? 'selected' : '' }}>{{ $label }}
+                    </option>
                     @endforeach
                 </select>
                 @if($errors->has('city'))
-                    <p class="help-block">
-                        {{ $errors->first('city') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('city') }}
+                </p>
                 @endif
             </div>
             <div class="form-group {{ $errors->has('time') ? 'has-error' : '' }}">
                 <label for="time">{{ trans('cruds.event.fields.time') }}*</label>
-                <input type="text" id="time" name="time" class="form-control datetime" value="{{ old('time', isset($event) ? $event->time : '') }}" required>
+                <input type="text" id="time" name="time" class="form-control datetime"
+                    value="{{ old('time', isset($event) ? $event->time : '') }}" required>
                 @if($errors->has('time'))
-                    <p class="help-block">
-                        {{ $errors->first('time') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('time') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.event.fields.time_helper') }}
@@ -73,11 +78,12 @@
             </div>
             <div class="form-group {{ $errors->has('price') ? 'has-error' : '' }}">
                 <label for="price">{{ trans('cruds.event.fields.price') }}*</label>
-                <input type="number" id="price" name="price" class="form-control" value="{{ old('price', isset($event) ? $event->price : '') }}" step="0.01" required>
+                <input type="number" id="price" name="price" class="form-control"
+                    value="{{ old('price', isset($event) ? $event->price : '') }}" step="0.01" required>
                 @if($errors->has('price'))
-                    <p class="help-block">
-                        {{ $errors->first('price') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('price') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.event.fields.price_helper') }}
@@ -85,11 +91,12 @@
             </div>
             <div class="form-group {{ $errors->has('introduction') ? 'has-error' : '' }}">
                 <label for="introduction">{{ trans('cruds.event.fields.introduction') }}*</label>
-                <textarea id="introduction" name="introduction" class="form-control ckeditor">{{ old('introduction', isset($event) ? $event->introduction : '') }}</textarea>
+                <textarea id="introduction" name="introduction"
+                    class="form-control ckeditor">{{ old('introduction', isset($event) ? $event->introduction : '') }}</textarea>
                 @if($errors->has('introduction'))
-                    <p class="help-block">
-                        {{ $errors->first('introduction') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('introduction') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.event.fields.introduction_helper') }}
@@ -97,11 +104,12 @@
             </div>
             <div class="form-group {{ $errors->has('content') ? 'has-error' : '' }}">
                 <label for="content">{{ trans('cruds.event.fields.content') }}*</label>
-                <textarea id="content" name="content" class="form-control ckeditor">{{ old('content', isset($event) ? $event->content : '') }}</textarea>
+                <textarea id="content" name="content"
+                    class="form-control ckeditor">{{ old('content', isset($event) ? $event->content : '') }}</textarea>
                 @if($errors->has('content'))
-                    <p class="help-block">
-                        {{ $errors->first('content') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('content') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.event.fields.content_helper') }}
@@ -109,11 +117,12 @@
             </div>
             <div class="form-group {{ $errors->has('slug') ? 'has-error' : '' }}">
                 <label for="slug">{{ trans('cruds.event.fields.slug') }}*</label>
-                <input type="text" id="slug" name="slug" class="form-control" value="{{ old('slug', isset($event) ? $event->slug : '') }}" required>
+                <input type="text" id="slug" name="slug" class="form-control" onkeyup="ChangeToSlug();"
+                    onclick="ChangeToSlug();" value="{{ old('slug', isset($event) ? $event->slug : '') }}" required>
                 @if($errors->has('slug'))
-                    <p class="help-block">
-                        {{ $errors->first('slug') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('slug') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.event.fields.slug_helper') }}
@@ -125,9 +134,9 @@
 
                 </div>
                 @if($errors->has('event_cover'))
-                    <p class="help-block">
-                        {{ $errors->first('event_cover') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('event_cover') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.event.fields.event_cover_helper') }}
@@ -135,11 +144,12 @@
             </div>
             <div class="form-group {{ $errors->has('video_link') ? 'has-error' : '' }}">
                 <label for="video_link">{{ trans('cruds.event.fields.video_link') }}</label>
-                <textarea id="video_link" name="video_link" class="form-control ">{{ old('video_link', isset($event) ? $event->video_link : '') }}</textarea>
+                <textarea id="video_link" name="video_link"
+                    class="form-control ">{{ old('video_link', isset($event) ? $event->video_link : '') }}</textarea>
                 @if($errors->has('video_link'))
-                    <p class="help-block">
-                        {{ $errors->first('video_link') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('video_link') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.event.fields.video_link_helper') }}
@@ -151,9 +161,9 @@
 
                 </div>
                 @if($errors->has('event_image'))
-                    <p class="help-block">
-                        {{ $errors->first('event_image') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('event_image') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.event.fields.event_image_helper') }}
@@ -168,6 +178,41 @@
 @endsection
 
 @section('scripts')
+<script>
+    function ChangeToSlug(){
+    var name, slug;
+ 
+    //Lấy text từ thẻ input title 
+    title = document.getElementById("name").value;
+ 
+    //Đổi chữ hoa thành chữ thường
+    slug = title.toLowerCase();
+ 
+    //Đổi ký tự có dấu thành không dấu
+    slug = slug.replace(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, 'a');
+    slug = slug.replace(/é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ/gi, 'e');
+    slug = slug.replace(/i|í|ì|ỉ|ĩ|ị/gi, 'i');
+    slug = slug.replace(/ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ/gi, 'o');
+    slug = slug.replace(/ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự/gi, 'u');
+    slug = slug.replace(/ý|ỳ|ỷ|ỹ|ỵ/gi, 'y');
+    slug = slug.replace(/đ/gi, 'd');
+    //Xóa các ký tự đặt biệt
+    slug = slug.replace(/\`|\~|\!|\@|\#|\||\$|\%|\^|\&|\*|\(|\)|\+|\=|\,|\.|\/|\?|\>|\<|\'|\"|\:|\;|_/gi, '');
+    //Đổi khoảng trắng thành ký tự gạch ngang
+    slug = slug.replace(/ /gi, " - ");
+    //Đổi nhiều ký tự gạch ngang liên tiếp thành 1 ký tự gạch ngang
+    //Phòng trường hợp người nhập vào quá nhiều ký tự trắng
+    slug = slug.replace(/\-\-\-\-\-/gi, '-');
+    slug = slug.replace(/\-\-\-\-/gi, '-');
+    slug = slug.replace(/\-\-\-/gi, '-');
+    slug = slug.replace(/\-\-/gi, '-');
+    //Xóa các ký tự gạch ngang ở đầu và cuối
+    slug = '@' + slug + '@';
+    slug = slug.replace(/\@\-|\-\@|\@/gi, '');
+    //In slug ra textbox có id “slug”
+    document.getElementById('slug').value = slug;
+}
+</script>
 <script>
     Dropzone.options.eventCoverDropzone = {
     url: '{{ route('admin.events.storeMedia') }}',

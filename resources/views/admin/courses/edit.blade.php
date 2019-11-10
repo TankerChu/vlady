@@ -58,6 +58,18 @@
                     {{ trans('cruds.course.fields.introduction_helper') }}
                 </p>
             </div>
+            <div class="form-group {{ $errors->has('info') ? 'has-error' : '' }}">
+                <label for="info">{{ trans('cruds.course.fields.info') }}*</label>
+                <textarea id="info" name="info" class="form-control ckeditor">{{ old('info', isset($course) ? $course->info : '') }}</textarea>
+                @if($errors->has('info'))
+                    <p class="help-block">
+                        {{ $errors->first('info') }}
+                    </p>
+                @endif
+                <p class="helper-block">
+                    {{ trans('cruds.course.fields.info_helper') }}
+                </p>
+            </div>
             <div class="form-group {{ $errors->has('content') ? 'has-error' : '' }}">
                 <label for="content">{{ trans('cruds.course.fields.content') }}*</label>
                 <textarea id="content" name="content" class="form-control ckeditor">{{ old('content', isset($course) ? $course->content : '') }}</textarea>

@@ -108,7 +108,7 @@ return [
             'introduction'         => 'Introduction',
             'introduction_helper'  => 'Giới thiệu khóa học',
             'content'              => 'Content',
-            'content_helper'       => 'Nội dung khóa học',
+            'content_helper'       => 'Nội dung chi tiết khóa học',
             'slug'                 => 'Slug',
             'slug_helper'          => '',
             'courses_cover'        => 'Courses Cover',
@@ -125,6 +125,8 @@ return [
             'is_featured_helper'   => 'Đánh dấu vào đây nếu muốn khóa học hiện lên trang chủ',
             'video_link'           => 'Video Link',
             'video_link_helper'    => 'Lấy link từ youtube',
+            'info'                 => 'Info',
+            'info_helper'          => 'Thông tin về khóa học (thời gian, lợi ích khóa học,...)',
         ],
     ],
     'event'          => [
