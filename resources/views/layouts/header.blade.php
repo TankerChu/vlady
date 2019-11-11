@@ -54,7 +54,7 @@
                             Group</a>
                     </div>
                 </li>
-                <li class="nav-item"><a href="" class="nav-link">Liên Hệ</a></li>
+                <li class="nav-item"><a href="{{ route('contact-us') }}" class="nav-link">Liên Hệ</a></li>
                 <li class="nav-item"><a class="nav-link"
                         href="https://www.youtube.com/channel/UCdU44faIOEuxQhiN-qcn4KQ"><span
                             class="icon-youtube"></span></a></li>
