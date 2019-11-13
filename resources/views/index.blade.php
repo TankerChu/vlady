@@ -277,10 +277,10 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            {{-- @forelse ($featured as $featured)
+            @forelse ($featured as $featured)
             <div class="col-md-4">
                 <div class="pricing-wrap ftco-animate img"
-                    style="background-image: url( {{ $featured->getFirstMediaUrl('courses_cover );">
+                    style="background-image: url( {{ $featured->getFirstMediaUrl('courses_cover') }} );">
             <div class="title p-4">
                 <h3> {{$featured->name}} </h3>
             <span>{{$featured->date_time}}</span>
@@ -291,9 +291,7 @@
             <div>
                 <span class="price">Liên Hệ</span>
                 <h3>{{$featured->address}}</h3>
-                @php
-                echo $featured->introduction
-                @endphp
+                <p> {!!$featured->introduction!!} </p>
             </div>
         </div>
     </div>
@@ -307,7 +305,7 @@
                 </h2>
             </div>
         </div>
-        @endforelse --}}
+        @endforelse
     </div>
     </div>
 </section>
