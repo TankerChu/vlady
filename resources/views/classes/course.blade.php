@@ -87,11 +87,7 @@
             </div>
         </div>
         {{-- nội dung chi tiết khóa học --}}
-<<<<<<< HEAD
         <p>{!!$course->content!!}</p>
-=======
-        <p> {!!$course->content!!} </p>
->>>>>>> 417d1961cbb5ddfb3222c5bb1e7b68a87c08351c
         {{-- hết phần nội dung chi tiết --}}
     </div>
 </section>
