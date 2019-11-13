@@ -280,7 +280,11 @@
             @forelse ($featured as $featured)
             <div class="col-md-4">
                 <div class="pricing-wrap ftco-animate img"
+<<<<<<< HEAD
                     style="background-image: url( {{ $featured->getFirstMediaUrl('courses_cover')}});">
+=======
+                    style="background-image: url( {{ $featured->getFirstMediaUrl('courses_cover') }} );">
+>>>>>>> 417d1961cbb5ddfb3222c5bb1e7b68a87c08351c
             <div class="title p-4">
                 <h3> {{$featured->name}} </h3>
             <span>{{$featured->date_time}}</span>
@@ -676,7 +680,7 @@
                         </div>
                         <div class="col"><img src="images/unesco-logo.jpg" class="img-fluid" alt="2 slide">
                         </div>
-                        <div class="col"><img src="images/unicef-logo.png" class="img-fluid" alt="3 slide">
+                        <div class="col"><img src="images/unicef-logo.jpg" class="img-fluid" alt="3 slide">
                         </div>
                     </div>
                 </div>
@@ -686,7 +690,7 @@
                         </div>
                         <div class="col"><img src="images/download.jpg" class="img-fluid" alt="2 slide">
                         </div>
-                        <div class="col"><img src="images/unicef-logo.png" class="img-fluid" alt="3 slide">
+                        <div class="col"><img src="images/unicef-logo.jpg" class="img-fluid" alt="3 slide">
                         </div>
                     </div>
                 </div>

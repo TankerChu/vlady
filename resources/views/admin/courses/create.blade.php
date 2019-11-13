@@ -203,7 +203,7 @@
     Dropzone.options.coursesCoverDropzone = {
     url: '{{ route('admin.courses.storeMedia') }}',
     maxFilesize: 2, // MB
-    acceptedFiles: '.jpeg,.jpg,.png,.gif',
+    acceptedFiles: '.jpeg,.jpg',
     maxFiles: 1,
     addRemoveLinks: true,
     headers: {
@@ -258,7 +258,7 @@
 Dropzone.options.coursesImageDropzone = {
     url: '{{ route('admin.courses.storeMedia') }}',
     maxFilesize: 2, // MB
-    acceptedFiles: '.jpeg,.jpg,.png,.gif',
+    acceptedFiles: '.jpeg,.jpg',
     addRemoveLinks: true,
     headers: {
       'X-CSRF-TOKEN': "{{ csrf_token() }}"

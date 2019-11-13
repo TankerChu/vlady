@@ -20,7 +20,11 @@
                 </span>
                 <h2 class="mb-3"> {{ $event->name}} </h2>
                 {{-- giới thiệu cề sự kiện --}}
+<<<<<<< HEAD
                 <p>{!!$event->introduction!!}</p>
+=======
+                <p> {!!$event->introduction!!} </p>
+>>>>>>> 417d1961cbb5ddfb3222c5bb1e7b68a87c08351c
                 <a href="#dang-ki-event" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Đăng kí
                     học ngay</a>
             </div>
@@ -50,7 +54,11 @@
         </div>
         <div>
             {{-- phần nội dung khóa học ở đây --}}
+<<<<<<< HEAD
             <p>{!!$event->content!!}</p>
+=======
+            <p> {!!$event->content!!} </p>
+>>>>>>> 417d1961cbb5ddfb3222c5bb1e7b68a87c08351c
             {{-- hết phần nội dung khóa học --}}
         </div>
     </div>
