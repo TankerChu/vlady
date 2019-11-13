@@ -165,12 +165,11 @@
 
 @section('scripts')
 <script>
-    function ChangeToSlug()
-{
-    var title, slug;
+    function ChangeToSlug(){
+    var name, slug;
  
     //Lấy text từ thẻ input title 
-    title = document.getElementById("title").value;
+    title = document.getElementById("name").value;
  
     //Đổi chữ hoa thành chữ thường
     slug = title.toLowerCase();

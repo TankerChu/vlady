@@ -1,4 +1,5 @@
 <?php
+
 // route cho phần trang chủ
 Route::get('/', 'FrontendController@index')->name('home-page');
 

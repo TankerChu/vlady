@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-cell" data-flickity-bg-lazyload="images/1546591430121.png">
+            <div class="carousel-cell" data-flickity-bg-lazyload="images/1546591430121.jpg">
                 <div class="chat_vol2 carousel-fade">
                     <div class="container">
                         <div class="row">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-cell" data-flickity-bg-lazyload="images/1546591445513.png">
+            <div class="carousel-cell" data-flickity-bg-lazyload="images/1546591445513.jpg">
                 <div class="chat_vol2 carousel-fade">
                     <div class="container">
                         <div class="row">
@@ -51,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-cell" data-flickity-bg-lazyload="images/phu-nu-a-dung-xem-dan-ong-la-tat-ca.png">
+            <div class="carousel-cell" data-flickity-bg-lazyload="images/phu-nu-a-dung-xem-dan-ong-la-tat-ca.jpg">
                 <div class="chat_vol2 carousel-fade">
                     <div class="container">
                         <div class="row">
@@ -64,7 +64,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-cell" data-flickity-bg-lazyload="images/phu-nu-a-dung-xem-dan-ong-la-tat-ca.png">
+            <div class="carousel-cell" data-flickity-bg-lazyload="images/phu-nu-a-dung-xem-dan-ong-la-tat-ca.jpg">
                 <div class="chat_vol2 carousel-fade">
                     <div class="container">
                         <div class="row">
@@ -277,10 +277,10 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            {{-- @forelse ($featured as $featured)
+            @forelse ($featured as $featured)
             <div class="col-md-4">
                 <div class="pricing-wrap ftco-animate img"
-                    style="background-image: url( {{ $featured->getFirstMediaUrl('courses_cover );">
+                    style="background-image: url( {{ $featured->getFirstMediaUrl('courses_cover')}});">
             <div class="title p-4">
                 <h3> {{$featured->name}} </h3>
             <span>{{$featured->date_time}}</span>
@@ -291,9 +291,7 @@
             <div>
                 <span class="price">Liên Hệ</span>
                 <h3>{{$featured->address}}</h3>
-                @php
-                echo $featured->introduction
-                @endphp
+                <p> {!!$featured->introduction!!} </p>
             </div>
         </div>
     </div>
@@ -307,7 +305,7 @@
                 </h2>
             </div>
         </div>
-        @endforelse --}}
+        @endforelse
     </div>
     </div>
 </section>
@@ -352,7 +350,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="pricing-wrap ftco-animate img" style="background-image: url('images/1568026811516.png ');">
+                <div class="pricing-wrap ftco-animate img" style="background-image: url('images/1568026811516.jpg ');">
                     <div class="title p-4">
                         <h3>BJ Từ Bản Năng Gốc</h3>
                         <span></span>
@@ -392,7 +390,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="pricing-wrap ftco-animate img" style="background-image: url('images/1568026661007.png ');">
+                <div class="pricing-wrap ftco-animate img" style="background-image: url('images/1568026661007.jpg ');">
                     <div class="title p-4">
                         <h3>MASSAGE KÍCH HOẠT HUYỆT YÊU CHO CHÀNG</h3>
                         <span>Tất tần tật các kỹ thuật massage điêu luyện</span>
@@ -477,7 +475,7 @@
         <div class="row no-gutters">
             <div class="col-lg-6 d-flex">
                 <div class="coach d-sm-flex align-items-stretch">
-                    <div class="img" style="background-image: url('images/1546591460673%20%281%29fixed.png ');">
+                    <div class="img" style="background-image: url('images/1546591460673%20%281%29fixed.jpg ');">
                     </div>
                     <div class="text py-4 px-5 ftco-animate">
                         <span class="subheading">Giám Đốc</span>
@@ -529,7 +527,7 @@
 
 <!--khách hàng nói-->
 <section class="ftco-section testimony-section"
-    style="background-image: url('images/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.png '); font-family: Roboto;"
+    style="background-image: url('images/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.jpg '); font-family: Roboto;"
     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
@@ -674,7 +672,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col"><img src="images/download.png" class="img-fluid" alt="1 slide">
+                        <div class="col"><img src="images/download.jpg" class="img-fluid" alt="1 slide">
                         </div>
                         <div class="col"><img src="images/unesco-logo.jpg" class="img-fluid" alt="2 slide">
                         </div>
@@ -686,7 +684,7 @@
                     <div class="row">
                         <div class="col"><img src="images/nielsen-logo-1200x675-1.jpg" class="img-fluid" alt="1 slide">
                         </div>
-                        <div class="col"><img src="images/download.png" class="img-fluid" alt="2 slide">
+                        <div class="col"><img src="images/download.jpg" class="img-fluid" alt="2 slide">
                         </div>
                         <div class="col"><img src="images/unicef-logo.png" class="img-fluid" alt="3 slide">
                         </div>
@@ -735,7 +733,7 @@
                 <div class="blog-entry align-self-stretch">
                     <a href="http://nuhoangphongthe.com/nhap-mon-tinh-duc-hoc/diem-nhay-cam-kich-thich-chang-khi-yeu/"
                         class="block-20"
-                        style="background-image: url('images/diem-nhay-cam-kich-thich-chang-khi-yeu-1000x570.png ');">
+                        style="background-image: url('images/diem-nhay-cam-kich-thich-chang-khi-yeu-1000x570.jpg ');">
                     </a>
                     <div class="text py-4 d-flex">
                         <div class="desc">
@@ -751,7 +749,7 @@
                 <div class="blog-entry align-self-stretch">
                     <a href="http://nuhoangphongthe.com/nu_hoang_phong_the/7-buoc-de-dua-chang-len-dinh-bang-mieng/"
                         class="block-20"
-                        style="background-image: url('images/7-buoc-de-dua-chang-len-dinh-bang-mieng-1000x570.png ');">
+                        style="background-image: url('images/7-buoc-de-dua-chang-len-dinh-bang-mieng-1000x570.jpg ');">
                     </a>
                     <div class="text py-4 d-flex">
                         <div class="desc">

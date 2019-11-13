@@ -2,14 +2,14 @@
 
 @section('banner')
 <section class="hero-wrap js-fullheight">
-    <div class="overlay" style="background-image: url('images/1546591430121.png ')"></div>
+    <div class="overlay" style="background-image: url('images/1546591430121.jpg ')"></div>
 </section>
 @endsection
 
 @section('content')
 <section class="ftco-about d-md-flex">
     <div class="one-half img"
-        style="background-image: url('images/anh-ve-nhunglady.png ');background-size: cover; background-position: top;">
+        style="background-image: url('images/anh-ve-nhunglady.jpg ');background-size: cover; background-position: top;">
         <a href="https://www.youtube.com/watch?v=LG0FHYgMtAE"
             class="icon popup-youtube d-flex justify-content-center align-items-center">
 
