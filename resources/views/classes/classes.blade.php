@@ -38,9 +38,7 @@
 						<div>
 							<span class="price"> Liên Hệ </span>
 							<h3><a href="#"> {{ $courses->address }} </a></h3>
-							@php
-							echo $courses->introduction
-							@endphp
+							<p> {!!$courses->introduction!!} </p>
 						</div>
 					</div>
 				</div>

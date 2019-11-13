@@ -4395,7 +4395,6 @@ input[type="button"].btn-block {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
 }
 
 .navbar>.container,
@@ -9960,7 +9959,7 @@ h5,
     left: 0;
     top: 0;
     margin-top: -130px;
-    background: #000 !important;
+    background: #0009 !important;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border: none;

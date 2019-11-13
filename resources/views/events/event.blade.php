@@ -20,9 +20,7 @@
                 </span>
                 <h2 class="mb-3"> {{ $event->name}} </h2>
                 {{-- giới thiệu cề sự kiện --}}
-                @php
-                echo $event->introduction
-                @endphp
+                <p> {!!$event->introduction!!} </p>
                 <a href="#dang-ki-event" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Đăng kí
                     học ngay</a>
             </div>
@@ -52,9 +50,7 @@
         </div>
         <div>
             {{-- phần nội dung khóa học ở đây --}}
-            @php
-            echo $event->content
-            @endphp
+            <p> {!!$event->content!!} </p>
             {{-- hết phần nội dung khóa học --}}
         </div>
     </div>

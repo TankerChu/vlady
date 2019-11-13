@@ -165,12 +165,11 @@
 
 @section('scripts')
 <script>
-    function ChangeToSlug()
-{
-    var title, slug;
+    function ChangeToSlug(){
+    var name, slug;
  
     //Lấy text từ thẻ input title 
-    title = document.getElementById("title").value;
+    title = document.getElementById("name").value;
  
     //Đổi chữ hoa thành chữ thường
     slug = title.toLowerCase();
@@ -204,7 +203,7 @@
     Dropzone.options.coursesCoverDropzone = {
     url: '{{ route('admin.courses.storeMedia') }}',
     maxFilesize: 2, // MB
-    acceptedFiles: '.jpeg,.jpg,.png,.gif',
+    acceptedFiles: '.jpeg,.jpg',
     maxFiles: 1,
     addRemoveLinks: true,
     headers: {
@@ -259,7 +258,7 @@
 Dropzone.options.coursesImageDropzone = {
     url: '{{ route('admin.courses.storeMedia') }}',
     maxFilesize: 2, // MB
-    acceptedFiles: '.jpeg,.jpg,.png,.gif',
+    acceptedFiles: '.jpeg,.jpg',
     addRemoveLinks: true,
     headers: {
       'X-CSRF-TOKEN': "{{ csrf_token() }}"

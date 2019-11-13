@@ -20,12 +20,15 @@
                     <i class="db-right"></i>
                 </span>
                 <h2 class="mb-3"> {{ $course->name}} </h2>
-                {{-- thông tin khóa học --}}
-                @php
-                echo $course->introduction
-                @endphp
-                {{-- hết phần thông tin --}}
-                <a href="#dang-ki-hoc" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Đăng kí
+            </div>
+        </div>
+        {{-- giới thiệu khóa học --}}
+        <p> {!!$course->introduction!!} </p>
+        {{-- hết phần giới thiệu --}}
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10 heading-section text-center ftco-animate">
+                <a href="#dang-ki-hoc" class="btn btn-warning btn-lg active" style="align-self: center;" role="button"
+                    aria-pressed="true">Đăng kí
                     học ngay</a>
             </div>
         </div>
@@ -61,22 +64,38 @@
 
     <div class="one-half ftco-animate">
         <div class="heading-section ftco-animate ">
-            <h2 class="mb-4">Nội Dung Khóa Học</h2>
+            <h2 class="mb-4">Thông Tin</h2>
         </div>
         <div>
-            {{-- phần nội dung khóa học ở đây --}}
-            @php
-            echo $course->content
-            @endphp
-            {{-- hết phần nội dung khóa học --}}
+            {{-- phần thông tin khóa học ở đây --}}
+            <P> {!!$course->info!!} </P>
+            {{-- hết phần thông tin khóa học --}}
         </div>
+    </div>
+</section>
+
+<section class="ftco-section" style="font-family: Roboto;">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10 heading-section text-center ftco-animate">
+                <span class="subheading">
+                    <i class="db-left"></i>
+                    Nội Dung
+                    <i class="db-right"></i>
+                </span>
+                <h2 class="mb-3"> Nội Dung Khóa Học </h2>
+            </div>
+        </div>
+        {{-- nội dung chi tiết khóa học --}}
+       <p>{!!$course->content!!}</p>
+        {{-- hết phần nội dung chi tiết --}}
     </div>
 </section>
 
 {{-- Phần phản hồi của học viên --}}
 <section class="ftco-section testimony-section"
-    style="background-image: url('{{ asset('images/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.png') }} '); font-family: Roboto;"
-    data-stellar-background-ratio="1">
+    style="background-image: url('{{ asset('images/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.jpg') }} '); font-family: Roboto;"
+    data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row justify-content-center mb-5">

@@ -175,7 +175,7 @@
     Dropzone.options.eventCoverDropzone = {
     url: '{{ route('admin.events.storeMedia') }}',
     maxFilesize: 2, // MB
-    acceptedFiles: '.jpeg,.jpg,.png,.gif',
+    acceptedFiles: '.jpeg,.jpg',
     maxFiles: 1,
     addRemoveLinks: true,
     headers: {
@@ -230,7 +230,7 @@
 Dropzone.options.eventImageDropzone = {
     url: '{{ route('admin.events.storeMedia') }}',
     maxFilesize: 2, // MB
-    acceptedFiles: '.jpeg,.jpg,.png,.gif',
+    acceptedFiles: '.jpeg,.jpg',
     addRemoveLinks: true,
     headers: {
       'X-CSRF-TOKEN': "{{ csrf_token() }}"
