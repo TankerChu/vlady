@@ -4,7 +4,7 @@
 @section('banner')
 <!-- {{-- banner --}} -->
 <section class="hero-wrap js-fullheight">
-    <div class="overlay" style="background-image: url('images/1546591477050.png' )"></div>
+    <div class="overlay" style="background-image: url('images/1546591477050.jpg' )"></div>
 </section>
 <!-- {{-- hết banner --}} -->
 @endsection
@@ -142,7 +142,7 @@
 
 <!-- {{-- phần khách hàng --}} -->
 <section class="ftco-section testimony-section"
-    style="background-image: url('images/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.png '); font-family: Roboto,serif;"
+    style="background-image: url('images/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.jpg '); font-family: Roboto,serif;"
     data-stellar-background-ratio="1">
     <div class="overlay"></div>
     <div class="container">
