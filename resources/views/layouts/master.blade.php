@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{asset('css/flickity.min.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="{{asset('css/aos.css')}}">
-    <link rel="stylesheet" href="{{asset('css/style1.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     @yield('css')
   </head>
 

@@ -70,10 +70,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     // Courses
     Route::delete('courses/destroy', 'CoursesController@massDestroy')->name('courses.massDestroy');
 
-
     // Events
     Route::delete('events/destroy', 'EventsController@massDestroy')->name('events.massDestroy');
-
 
     Route::get('system-calendar', 'SystemCalendarController@index')->name('systemCalendar');
 

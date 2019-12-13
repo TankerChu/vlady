@@ -44,33 +44,20 @@
         </div>
         <div>
             <p>
-                NhungLady may mắn sinh ra trong một gia đình có mẹ là bác sĩ trưởng khoa sản hơn 20 năm, nhà lại có
-                phòng khám sản phụ
-                khoa riêng nên từ bé cô đã được tiếp xúc với những vấn đề liên quan đến sức khỏe sinh sản, những tên
-                thuốc và tên bệnh
-                thường gặp ở phụ nữ cũng như những hoàn cảnh gia đình họ đều tâm sự với bác sĩ.
-
-                Khi đi làm NhungLady rất yêu thích môi trường giáo dục nên đã làm song song 2 công việc điều hành trung
-                tâm tiếng Anh và
-                làm cố vấn cho chuỗi trường mầm non. Đây là cơ duyên tiếp theo dẫn cô đến với ngành nghề đặc biệt này vì
-                được tiếp xúc
-                làm việc với nhiều chuyên gia giáo dục, đặc biệt là các chuyên gia giáo dục giới tính. Cô cũng được các
-                bậc phụ huynh
-                cũng như các đối tác tin tưởng và tâm sự chuyện thầm kín. Và khi thấy rằng tại sao có quá nhiều phụ nữ
-                gặp vướng mắc
-                trong vấn đề “chuyện vợ chồng” như vậy, điều đó đã thôi thúc NhungLady nghiên cứu nghiêm túc và quyết
-                tâm theo đuổi con
-                đường rất mới này!
+                Là người đầu tiên nghiên cứu và giảng dạy bộ môn tâm lý, kỹ thuật tình dục học tại Việt Nam, Nhung cũng
+                gặp rất nhiều khó khăn trong giai đoạn đầu: Làm sao để phụ nữ Việt Nam cởi mở hơn, làm sao để họ có một
+                nơi tin tưởng để có thể tâm sự, chia sẻ chuyện “thầm kín” mà không bị nghĩ là “lừa đảo hay biến thái”
+                thật sự quá nhiều những thông tin cũng như những điều không hay về tình dục đã làm méo mó đi suy nghĩ
+                cũng như nhận thức của các chị em phụ nữ.
+                Nhằm có thể tổ chức các chương trình chia sẻ các kiến thức giá trị về tình yêu, hôn nhân dành cho chị em
+                phụ nữ lớn hơn nữa. Rồi nhiều chị em sẽ biết và tìm đến để được tháo nút thắt hôn nhân hơn nữa thì Nhung
+                thành lập group “Nghệ thuật phòng the đỉnh cao NhungLady” để “hội chị em” thoải mái dãi bày tâm sự. Tại
+                đây, những “hạt mầm hạnh phúc, yêu thương” đầu tiên được cô gieo xuống. Nhung thực hiện các buổi
+                livestream tư vấn trực tiếp trên facebook của mình. Cô miệt mài chia sẻ mỗi tối, ngày nào cũng như ngày
+                nào. Rất nhiều chị em phụ nữ nhận được giá trị tuyệt vời từ những chia sẻ tâm sự của Nhung. Đến nay cô
+                trở thành chuyên gia tình dục đầu tiên có số giờ livestream tư vấn đáng nể, luôn duy trì đều đặn và giữ
+                được tương tác, kết nối với học viên.
             </p>
-        </div>
-    </div>
-</section>
-<section class="ftco-section" >
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-10 heading-section text-center ftco-animate">
-                <h2 class="mb-3"> Quyết tâm xây dựng một ngôi nhà chung cho chị em phụ nữ </h2>
-            </div>
         </div>
         <p>Là người đầu tiên nghiên cứu và giảng dạy bộ môn tâm lý, kỹ thuật tình dục học tại Việt Nam, Nhunglady cũng
             gặp rất

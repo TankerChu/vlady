@@ -109,13 +109,12 @@
                 <div class="col-lg-6">
                     <h4>Về Chúng Tôi</h4>
                     <p>
-                        Học viện yêu Vlady trực thuộc Trung tâm UNESCO hạnh phúc phụ nữ Việt là đơn vị đầu tiên và duy
-                        nhất thuộc Liên hiệp các
-                        hội UNESCO Việt Nam hoạt động trong lĩnh vực phụ nữ và tình dục học tại Việt Nam. Với hơn
-                        100.000 học viên trong và
-                        ngoài nước trong suốt 6 năm hoạt động, chúng tôi tự hào là đơn vị tiên phong trong tư vấn, giảng
-                        dạy về lĩnh vực Tâm lý
-                        - Kỹ thuật tình dục học tại Việt Nam, nâng tầm hạnh phúc Phụ nữ Việt.
+                        Học viện yêu Vlady là trung tâm đầu tiên và duy nhất trực thuộc UNESCO Việt Nam hoạt động trong
+                        lĩnh vực phụ nữ và tình dục học. Với hơn 30.000 học viên trong và ngoài nước trong suốt 6 năm
+                        hoạt động, chúng tôi tự hào là đơn vị tiên phong trong tư vấn, giảng dạy về lĩnh vực Tâm lý - Kỹ
+                        thuật tình dục học tại Việt Nam. Chúng tôi luôn luôn đồng hành và hỗ trợ các học viên qua tư vấn
+                        trực tiếp và chia sẻ các kỹ năng, kinh nghiệm trên Group Facebook "NGHỆ THUẬT PHÒNG THE ĐỈNH CAO
+                        - NHUNGLADY".
                     </p>
                 </div>
                 <div class="col-lg-6">

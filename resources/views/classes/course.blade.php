@@ -78,6 +78,26 @@
     </div>
 </section>
 
+<section class="ftco-section" style="font-family: Roboto;">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10 heading-section text-center ftco-animate">
+                <span class="subheading">
+                    <i class="db-left"></i>
+                    Nội Dung
+                    <i class="db-right"></i>
+                </span>
+                <h2 class="mb-3"> Nội Dung Khóa Học </h2>
+            </div>
+        </div>
+        {{-- nội dung chi tiết khóa học --}}
+        @php
+        echo $course->content
+        @endphp
+        {{-- hết phần nội dung chi tiết --}}
+    </div>
+</section>
+
 <section class="ftco-section" >
     <div class="container">
         <div class="row justify-content-center mb-5">
@@ -100,7 +120,7 @@
 
 {{-- Phần phản hồi của học viên --}}
 <section class="ftco-section testimony-section"
-    style="background-image: url('{{ asset('images/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.jpg') }} '); font-family: Roboto;"
+    style="background-image: url('{{ asset('images/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.png') }} '); font-family: Roboto;"
     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">

@@ -13,7 +13,6 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Yajra\DataTables\Facades\DataTables;
 
-
 class EventsController extends Controller
 {
     use MediaUploadingTrait;
