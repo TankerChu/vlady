@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('home-page') }}"><img src="images/icon/vlady-logo-1024x726.png" alt=""
-                width="90px" height="70px"></a>
+        <a class="navbar-brand" href="{{ route('home-page') }}"><img
+                src="{{asset('images/icon/vlady-logo-1024x726.png')}}" alt="logo" width="90px" height="70px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
             aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
@@ -20,12 +20,10 @@
                         data-toggle="dropdown">Khóa Học Trực Tiếp</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{ route('classes') }}">Khóa Học</a>
-                        {{--  @foreach (App\Course::where('is_featured', 1)->get() as $featured)
+                        @foreach (App\Course::where('is_featured', 1)->get() as $featured)
                         <a class="dropdown-item"
                             href="{{ route('course',[$featured->slug, $featured->id]) }}">{{$featured->name}}</a>
-                        @endforeach --}}
-
-
+                        @endforeach
                     </div>
                 </li>
                 <li class="nav-item"><a href="" class="nav-link">Khóa Học Online</a></li>
@@ -54,15 +52,15 @@
                             Group</a>
                     </div>
                 </li>
-                <li class="nav-item"><a href="" class="nav-link">Liên Hệ</a></li>
+                <li class="nav-item"><a href="{{ route('contact-us') }}" class="nav-link">Liên Hệ</a></li>
                 <li class="nav-item"><a class="nav-link"
-                        href="https://www.youtube.com/channel/UCdU44faIOEuxQhiN-qcn4KQ"><span
-                            class="icon-youtube"></span></a></li>
-                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/hocvienyeuVlady/"><span
-                            class="icon-facebook"></span></a>
+                        href="https://www.youtube.com/channel/UCdU44faIOEuxQhiN-qcn4KQ"><img
+                            src="{{asset('images\icon\navbar\icons8_youtube_30px.png')}}" alt="icon youtube"></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/hocvienyeuVlady/"><img
+                            src="{{asset('images\icon\navbar\icons8_facebook_f_30px.png')}}" alt="icon facebook"></a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/nhung.lady/"><span
-                            class="icon-instagram"></span></a>
+                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/nhung.lady/"><img
+                            src="{{asset('images\icon\navbar\icons8_instagram_30px.png')}}" alt="icon insta"></a>
                 </li>
             </ul>
         </div>

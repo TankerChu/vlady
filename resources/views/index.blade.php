@@ -1,16 +1,15 @@
 @extends('layouts.master')
-
 @section('banner')
 <section class="hero-wrap js-fullheight">
     <div class="overlay">
         <div class="fs-carousel"
             data-flickity='{ "draggable": true , "wrapAround": true , "pauseAutoPlayOnHover": false, "contain": true, "bgLazyLoad": true }'>
             <div class="carousel-cell">
-                <div class="video-texture" style="background-image:url( {{ asset('images/texture.png') }} ); ">
+                <div class="video-texture" style="background-image:url({{asset('images/texture.png')}}); ">
                 </div>
                 <video autoplay loop>
-                    <source src=" images/Sexy-Dancer-Slowly-Touching-2.webmsd.webm" type="video/webm">
-                    <source src="images/Sexy-Dancer-Slowly-Touching-2.mp4.mp4" type="video/mp4">
+                    <source src="images/trang-chu/Sexy-Dancer-Slowly-Touching-2.webmsd.webm" type="video/webm">
+                    <source src="images/trang-chu/Sexy-Dancer-Slowly-Touching-2.mp4.mp4" type="video/mp4">
                     Trình duyệt của bạn không hỗ trợ video
                 </video>
                 <div class="chat_vol2_center carousel-fade">
@@ -25,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-cell" data-flickity-bg-lazyload="images/1546591430121.png">
+            <div class="carousel-cell" data-flickity-bg-lazyload="images/trang-chu/về nhunglady.jpg">
                 <div class="chat_vol2 carousel-fade">
                     <div class="container">
                         <div class="row">
@@ -38,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-cell" data-flickity-bg-lazyload="images/1546591445513.png">
+            <div class="carousel-cell" data-flickity-bg-lazyload="images/1546591445513.jpg">
                 <div class="chat_vol2 carousel-fade">
                     <div class="container">
                         <div class="row">
@@ -51,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-cell" data-flickity-bg-lazyload="images/phu-nu-a-dung-xem-dan-ong-la-tat-ca.png">
+            <div class="carousel-cell" data-flickity-bg-lazyload="images/phu-nu-a-dung-xem-dan-ong-la-tat-ca.jpg">
                 <div class="chat_vol2 carousel-fade">
                     <div class="container">
                         <div class="row">
@@ -64,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-cell" data-flickity-bg-lazyload="images/phu-nu-a-dung-xem-dan-ong-la-tat-ca.png">
+            <div class="carousel-cell" data-flickity-bg-lazyload="images/phu-nu-a-dung-xem-dan-ong-la-tat-ca.jpg">
                 <div class="chat_vol2 carousel-fade">
                     <div class="container">
                         <div class="row">
@@ -84,7 +83,7 @@
 
 @section('content')
 <!-- phần thông tin về công ti -->
-<section class="ftco-section" id="why" style="font-family: Roboto;">
+<section class="ftco-section" id="why">
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-10 heading-section text-center ftco-animate">
@@ -94,27 +93,34 @@
                     <i class="db-right"></i>
                 </span>
                 <h2 class="mb-3">Tại sao cần học kỹ năng phòng the ngay hôm nay?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Không thể phủ nhận “chuyên phòng the" ngày càng chiếm vị trí quan trọng trong đời sống hôn nhân, là
+                    tác nhân không thể
+                    thiếu giúp giữ lửa hôn nhân hạnh phúc viên mãn.
+                    Người phụ nữ hiện đại dần gạt bỏ “quan niệm cũ" khắt khe về tình dục; tìm đến các lớp học kỹ năng
+                    phòng the, là để bản
+                    thân tự tin hơn, quyến rũ hơn, để "hút hồn" người bạn đời khiến anh ấy chỉ muốn "dính" lấy bạn như
+                    keo, không bị lay
+                    động trước bất kỳ “bóng hồng” nào khác.
+                </p>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <h4>Về Chúng Tôi</h4>
-                    <p>Với mục đích giúp các chị em phụ nữ chạm tới đỉnh cao của nghệ thuật phòng the, các khóa học tại
-                        Học viện yêu Vlady tập trung vào phân tích chuyên sâu và hướng dẫn thực hành trực tiếp về cả tâm
-                        lý và kỹ thuật tình dục học. Chúng tôi luôn luôn đồng hành và hỗ trợ các học viên qua tư vấn
-                        trực tiếp và chia sẻ các kỹ năng, kinh nghiệm trên Group Facebook "NGHỆ THUẬT PHÒNG THE ĐỈNH CAO
-                        - NHUNGLADY".</p>
+                    <p>
+                        Học viện yêu Vlady trực thuộc Trung tâm UNESCO hạnh phúc phụ nữ Việt là đơn vị đầu tiên và duy
+                        nhất thuộc Liên hiệp các
+                        hội UNESCO Việt Nam hoạt động trong lĩnh vực phụ nữ và tình dục học tại Việt Nam. Với hơn
+                        100.000 học viên trong và
+                        ngoài nước trong suốt 6 năm hoạt động, chúng tôi tự hào là đơn vị tiên phong trong tư vấn, giảng
+                        dạy về lĩnh vực Tâm lý
+                        - Kỹ thuật tình dục học tại Việt Nam, nâng tầm hạnh phúc Phụ nữ Việt.
+                    </p>
                 </div>
                 <div class="col-lg-6">
                     <h4>Video Về Chúng Tôi</h4>
-                    <div class='embed-container'><iframe width="100%" height="315"
+                    <div class='embed-container'><iframe title="YoutubeVid" width="100%" height="315"
                             src="https://www.youtube.com/embed/LG0FHYgMtAE" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -124,9 +130,10 @@
         </div>
     </div>
 </section>
-
-{{-- phần lí do lựa chọn --}}
-<section class="ftco-section" style="font-family: Roboto; background: ;">
+<!-- phần thông số -->
+<section class="ftco-counter ftco-bg-dark img" id="section-counter"
+    style="background-image: url('images/trang-chu/background-thong-so.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-10 heading-section text-center ftco-animate">
@@ -140,63 +147,55 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3" style="padding-left: 30px">
                 <div class="services text-center ftco-animate">
                     <div class="d-flex justify-content-center align-items-center">
-                        <span class=""><img src="images/icon/icons8_trophy_100px.png"></span>
+                        <span class=""><img src="images\icon\info\icons8_trophy_filled_100px.png"></span>
                     </div>
                     <div class="text px-md-2">
-                        <h3 style="line-height: 5;">Kỹ Thuật Đỉnh cao</h3>
+                        <span style="font-size: 30px; line-height: 1.7em"><strong>Kỹ Thuật Đỉnh Cao</strong></span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" style="padding-left: 30px">
                 <div class="services text-center ftco-animate">
                     <div class="d-flex justify-content-center align-items-center">
-                        <span class=""><img src="images/icon/icons8_classroom_100px.png"></span>
+                        <span class=""><img src="images\icon\info\icons8_classroom_100px.png"></span>
                     </div>
                     <div class="text px-md-2">
-                        <h3 style="line-height: 5;">Giảng Viên Tận Tâm</h3>
+                        <span style="font-size: 30px; line-height: 1.7em"><strong>Giảng Viên Tận Tâm</strong></span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" style="padding-left: 30px">
                 <div class="services text-center ftco-animate">
                     <div class="d-flex justify-content-center align-items-center">
-                        <span class=""><img src="images/icon/icons8_light_on_100px_2.png"></span>
+                        <span class=""><img src="images\icon\info\icons8_light_on_100px.png"></span>
                     </div>
                     <div class="text px-md-2">
-                        <h3 style="line-height: 5;">Học Linh Hoạt</h3>
+                        <span style="font-size: 30px; line-height: 1.7em"><strong>Học Linh Hoạt</strong></span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" style="padding-left: 30px">
                 <div class="services text-center ftco-animate">
                     <div class="d-flex justify-content-center align-items-center">
-                        <span class=""><img src="images/icon/icons8_lightning_bolt_100px_2.png"></span>
+                        <span class=""><img src="images\icon\info\icons8_lightning_bolt_100px.png"></span>
                     </div>
                     <div class="text px-md-2">
-                        <h3 style="line-height: 5;">Hiệu Quả Ngay</h3>
+                        <span style="font-size: 30px; line-height: 1.7em"><strong>Hiệu Quả Ngay</strong></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-<!-- hết phần thông tin -->
-
-<!-- phần thông số -->
-<section class="ftco-counter ftco-bg-dark img" id="section-counter"
-    style="background-image: url(' images/black-and-white-sky-girl-photography-female-love-1373917-pxhere.com.jpg '); font-family: Roboto;"
-    data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
+    <div class="container" style="padding-top:60px">
         <div class="row justify-content-center">
             <div class="col">
                 <div class="row">
                     <div class="col d-flex justify-content-center counter-wrap ftco-animate" style="padding-left: 30px">
                         <div class="block-18 text-center">
-                            <img src="images/icon/icons8_courses_50px.png">
+                            <img src="images\icon\info\icons8_courses_50px.png">
                             <div class="text">
                                 <strong class="number" data-number="30" style="font-size: 70px;">0</strong><strong
                                     class="number">+</strong>
@@ -206,7 +205,7 @@
                     </div>
                     <div class="col d-flex justify-content-center counter-wrap ftco-animate" style="padding-left: 30px">
                         <div class="block-18 text-center">
-                            <img src="images/icon/icons8_student_50px.png">
+                            <img src="images\icon\info\icons8_student_50px.png">
                             <div class="text">
                                 <strong class="number" data-number="30000" style="font-size: 70px;">0</strong><strong
                                     class="number">+</strong>
@@ -217,7 +216,7 @@
                     </div>
                     <div class="col d-flex justify-content-center counter-wrap ftco-animate" style="padding-left: 30px">
                         <div class="block-18 text-center">
-                            <img src="images/icon/icons8_date_50px.png">
+                            <img src="images\icon\info\icons8_date_50px.png">
                             <div class="text">
                                 <strong class="number" data-number="5000" style="font-size: 70px;">0</strong><strong
                                     class="number">+</strong>
@@ -228,7 +227,7 @@
                     </div>
                     <div class="col d-flex justify-content-center counter-wrap ftco-animate" style="padding-left: 30px">
                         <div class="block-18 text-center">
-                            <img src="images/icon/icons8_classroom_50px_1.png">
+                            <img src="images\icon\info\icons8_classroom_filled_50px.png">
                             <div class="text">
                                 <strong class="number" data-number="75" style="font-size: 70px;">0</strong><strong
                                     class="number">%</strong>
@@ -243,9 +242,8 @@
     </div>
 </section>
 <!-- hết phần thông số -->
-
 <!-- phần khóa học trực tiếp -->
-<section class="ftco-section" style="font-family: Roboto;">
+<section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-10 heading-section text-center ftco-animate">
@@ -259,44 +257,44 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            {{-- @forelse ($featured as $featured)
+            @forelse ($featured as $featured)
             <div class="col-md-4">
                 <div class="pricing-wrap ftco-animate img"
-                    style="background-image: url( {{ $featured->getFirstMediaUrl('courses_cover );">
-            <div class="title p-4">
-                <h3> {{$featured->name}} </h3>
-            <span>{{$featured->date_time}}</span>
-        </div>
-        <div class="text p-4 d-flex align-items-end">
-            <a href="{{ route('course', [$featured->slug, $featured->id]) }}" class="btn-custom px-4 py-2">Tham Gia
-                Ngay</a>
-            <div>
-                <span class="price">Liên Hệ</span>
-                <h3>{{$featured->address}}</h3>
-                @php
-                echo $featured->introduction
-                @endphp
+                    style="background-image: url( {{ $featured->getFirstMediaUrl('courses_cover')}});">
+                    <div class="title p-4">
+                        <h3> {{$featured->name}} </h3>
+                        <span>{{$featured->date_time}}</span>
+                    </div>
+                    <div class="text p-4 d-flex align-items-end">
+                        <a href="{{ route('course', [$featured->slug, $featured->id]) }}"
+                            class="btn-custom px-4 py-2">Tham Gia
+                            Ngay</a>
+                        <div>
+                            <span class="price">Liên Hệ</span>
+                            <h3>{{$featured->address}}</h3>
+                            @php
+                            echo $featured->introduction
+                            @endphp
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @empty
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-md-10 heading-section text-center ftco-animate">
+                        <h2 class="mb-3" style="color:coral">Xin lỗi!!! Hiện tại chưa có khóa học nào. Xin hãy quay lại
+                            sau
+                        </h2>
+                    </div>
+                </div>
+                @endforelse
             </div>
         </div>
-    </div>
-    </div>
-    @empty
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-10 heading-section text-center ftco-animate">
-                <h2 class="mb-3" style="color:coral">Xin lỗi!!! Hiện tại chưa có khóa học nào. Xin hãy quay lại
-                    sau
-                </h2>
-            </div>
-        </div>
-        @endforelse --}}
-    </div>
-    </div>
 </section>
 <!-- hết phần khóa học trực tiếp -->
-
 <!-- phần khóa học online -->
-<section class="ftco-section" style="font-family: Roboto;">
+<section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-10 heading-section text-center ftco-animate">
@@ -312,9 +310,10 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <div class="pricing-wrap ftco-animate img" style="background-image: url('images/1568026404394.jpg ');">
+                <div class="pricing-wrap ftco-animate img"
+                    style="background-image: url('images/khoa-hoc-online/trinh-nu-hoan-tan.jpg');">
                     <div class="title p-4">
-                        <h3>Nữ Thần Se Khít</h3>
+                        <h3>Trinh nữ hoàn tân</h3>
                         <span>Hướng dẫn tập kegel từ A-Z</span>
                     </div>
                     <div class="text p-4 d-flex align-items-end">
@@ -323,20 +322,17 @@
                         <div>
                             <span class="price">1,999,000 đ</span>
                             <h3><a href="https://vlady.edu.vn/khoa-hoc/kegel-tazama">Nữ Thần Se Khít</a></h3>
-                            <p>Kegel phòng the là bài tập chuyên biệt cho cơ âm đạo, giúp tăng đàn hồi và se khít cơ âm
-                                đạo, tăng khoái cảm cho cả hai trong cuộc yêu.
-                                Hơn nữa, tập bài tập kegel sẽ giúp giảm thiểu tình trạng bệnh liên quan đến âm đạo như:
-                                sa tử cung, sa dạ con, ứ dịch sau sinh,...
-                                Còn chần chừ gì nữa, cùng Vlady bước vào bài tập kegel hiệu quả và đầy thú vị này ngay
-                                thôi!!</p>
+                            <p>Bài tập giúp se khít, đàn hồi vùng cơ âm đạo. Điều khiển vùng “tam giác mật" chuyển động
+                                theo ý muốn trong cuộc yêu</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="pricing-wrap ftco-animate img" style="background-image: url('images/1568026811516.png ');">
+                <div class="pricing-wrap ftco-animate img"
+                    style="background-image: url('images/khoa-hoc-online/bac-thay-thoi-ken.jpg');">
                     <div class="title p-4">
-                        <h3>BJ Từ Bản Năng Gốc</h3>
+                        <h3>BJ Master 4.0</h3>
                         <span></span>
                     </div>
                     <div class="text p-4 d-flex align-items-end">
@@ -347,15 +343,15 @@
                             <h3><a href="https://vlady.edu.vn/khoa-hoc/bj-sieu-biet-tu-ban-nang-goc">BJ Siêu Biệt Từ Bản
                                     Năng Gốc</a></h3>
                             <p>100% đàn ông đều thích được bạn tình sử dụng kỹ thuật này và tất nhiên nếu bạn là một
-                                người nghệ sĩ thổi kèn giỏi, bạn sẽ nhanh chóng chiếm lĩnh không chỉ con tim mà cả lý
-                                trí anh ấy!</p>
+                                người nghệ sĩ thổi kèn giỏi, bạn
+                                sẽ nhanh chóng chiếm lĩnh không chỉ con tim mà cả lý trí anh ấy!</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mx-auto">
                 <div class="pricing-wrap ftco-animate img"
-                    style="background-image: url('images/051913-07092018-41267202_1113252155491395_5200092298846666752_n.jpg ');">
+                    style="background-image: url('images/khoa-hoc-online/tu-the-phong-the.jpg');">
                     <div class="title p-4">
                         <h3>TƯ THẾ PHÒNG THE</h3>
                         <span></span>
@@ -366,15 +362,14 @@
                         <div>
                             <span class="price">1,999,000 đ</span>
                             <h3><a href="https://vlady.edu.vn/khoa-hoc/tu-the-phong-the">TƯ THẾ PHÒNG THE</a></h3>
-                            <p>Là một trong 3 khoá kỹ thuật độc quyền tại NhungLady Academy, TƯ THẾ PHÒNG THE hứa hẹn là
-                                một trong những khoá học thiết thực nhất, chi tiết nhất và bài bản nhất cho chị em phụ
-                                nữ, giúp tăng tương tác cho 2 bạn và đổi mới cuộc yêu.</p>
+                            <p>Hơn 50 tư thế đỉnh cao của bộ môn nghệ thuật phòng the cho các cặp đôi</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="pricing-wrap ftco-animate img" style="background-image: url('images/1568026661007.png ');">
+                <div class="pricing-wrap ftco-animate img"
+                    style="background-image: url('images/khoa-hoc-online/massage-kich-huyet.jpg');">
                     <div class="title p-4">
                         <h3>MASSAGE KÍCH HOẠT HUYỆT YÊU CHO CHÀNG</h3>
                         <span>Tất tần tật các kỹ thuật massage điêu luyện</span>
@@ -386,19 +381,17 @@
                             <span class="price">999,000 đ</span>
                             <h3><a href="https://vlady.edu.vn/khoa-hoc/massage-kich-hoat-huyet-yeu-cho-chang">MASSAGE
                                     KÍCH HOẠT HUYỆT YÊU CHO CHÀNG</a></h3>
-                            <p>Đàn ông ý mà, ai mà chả muốn được vợ chăm sóc, cung phụng!
-                                Massage là liều thuốc hiệu quả giải toả mọi căng thẳng, mệt mỏi cho các chàng sau ngày
-                                làm việc hiệu quả, là cầu nối giúp tăng tương tác vợ chồng, là đòn khơi gợi đam mê nơi
-                                con tim chàng!!
-                                Phụ nữ, sao không thực hành các bí kíp "kích hoạt huyệt yêu" này ngay hôm nay??</p>
+                            <p>Các kỹ thuật massage điêu luyện, từ a-z các bí kíp "kích hoạt huyệt yêu" của bộ môn
+                                massage</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="pricing-wrap ftco-animate img" style="background-image: url('images/1563853137057.jpg ');">
+                <div class="pricing-wrap ftco-animate img"
+                    style="background-image: url('images/khoa-hoc-online/doc-vi-dan-ong.jpg');">
                     <div class="title p-4">
-                        <h3>ĐỌC VỊ ĐÀN ÔNG</h3>
+                        <h3>Nghệ thuật giữ lửa hạnh phúc</h3>
                         <span>Làm thế nào để phát hiện chàng nói dối ? Khi nào thì đàn ông sẽ ngoại tình ?</span>
                     </div>
                     <div class="text p-4 d-flex align-items-end">
@@ -407,17 +400,14 @@
                         <div>
                             <span class="price">1,790,000 đ</span>
                             <h3><a href="https://vlady.edu.vn/khoa-hoc/doc-vi-dan-ong">ĐỌC VỊ ĐÀN ÔNG</a></h3>
-                            <p>Khóa học với 9 Video online và 2 buổi livestream trực tiếp với chuyên gia dạy bạn cách
-                                đọc vị để thấu hiểu chàng. Chàng đang nghĩ gì, chàng thích gì & ghét gì ở bạn ? Làm thế
-                                nào để phát hiện chàng nói dối ? Khi nào thì đàn ông sẽ ngoại tình ? Những câu hỏi này
-                                sẽ được giải đáp trong khóa học đặc biệt này. </p>
+                            <p>Dành cho những học viên nhập môn tâm lý - kỹ năng tình dục học</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="pricing-wrap ftco-animate img"
-                    style="background-image: url('images/bi-mat-ve-thu-dam-o-phu-nu-03-1024x672.jpg ');">
+                    style="background-image: url('images/khoa-hoc-online/my-nu-van-nguoi-me.jpg');">
                     <div class="title p-4">
                         <h3>NGŨ QUAN PHÒNG THE</h3>
                         <span>Tất tần tật các kỹ thuật massage điêu luyện</span>
@@ -441,9 +431,8 @@
     </div>
 </section>
 <!-- hết phần khóa học online -->
-
 <!--đội ngũ-->
-<section class="ftco-section" style="font-family: Roboto;">
+<section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-7 heading-section text-center ftco-animate">
@@ -459,7 +448,7 @@
         <div class="row no-gutters">
             <div class="col-lg-6 d-flex">
                 <div class="coach d-sm-flex align-items-stretch">
-                    <div class="img" style="background-image: url('images/1546591460673%20%281%29fixed.png ');">
+                    <div class="img" style="background-image: url('images/trang-chu/nhunglady-profile.jpg');">
                     </div>
                     <div class="text py-4 px-5 ftco-animate">
                         <span class="subheading">Giám Đốc</span>
@@ -468,16 +457,17 @@
                         <ul class="ftco-social-media d-flex mt-4">
                             <li class="ftco-animate"><a
                                     href="https://www.youtube.com/channel/UCdU44faIOEuxQhiN-qcn4KQ/featured"
-                                    class="mr-2 d-flex justify-content-center align-items-center"><span
-                                        class="icon-youtube"></span></a></li>
+                                    class="mr-2 d-flex justify-content-center align-items-center"><img
+                                        src="images\icon\navbar\icons8_youtube_30px.png" alt="icon youtube"></a></li>
                             <li class="ftco-animate"><a href="https://www.facebook.com/nhunglady.phunuviet"
-                                    class="mr-2 d-flex justify-content-center align-items-center"><span
-                                        class="icon-facebook"></span></a></li>
+                                    class="mr-2 d-flex justify-content-center align-items-center"><img
+                                        src="images\icon\navbar\icons8_facebook_f_30px.png" alt="icon facebook"></a>
+                            </li>
                             <li class="ftco-animate"><a href="https://www.instagram.com/nhung.lady/"
-                                    class="mr-2 d-flex justify-content-center align-items-center"><span
-                                        class="icon-instagram"></span></a></li>
+                                    class="mr-2 d-flex justify-content-center align-items-center"><img
+                                        src="images\icon\navbar\icons8_instagram_30px.png" alt="icon insta"></a>
+                            </li>
                         </ul>
-                        <p></p>
                     </div>
                 </div>
             </div>
@@ -491,16 +481,17 @@
                         <p>Chuyên gia tâm lý tại tt Unesco Hạnh phúc Phụ nữ Việt</p>
                         <ul class="ftco-social-media d-flex mt-4">
                             <li class="ftco-animate"><a href="#"
-                                    class="mr-2 d-flex justify-content-center align-items-center"><span
-                                        class="icon-youtube"></span></a></li>
+                                    class="mr-2 d-flex justify-content-center align-items-center"><img
+                                        src="images\icon\navbar\icons8_youtube_30px.png" alt="icon youtube"></a></li>
                             <li class="ftco-animate"><a href="#"
-                                    class="mr-2 d-flex justify-content-center align-items-center"><span
-                                        class="icon-facebook"></span></a></li>
+                                    class="mr-2 d-flex justify-content-center align-items-center"><img
+                                        src="images\icon\navbar\icons8_facebook_f_30px.png" alt="icon facebook"></a>
+                            </li>
                             <li class="ftco-animate"><a href="#"
-                                    class="mr-2 d-flex justify-content-center align-items-center"><span
-                                        class="icon-instagram"></span></a></li>
+                                    class="mr-2 d-flex justify-content-center align-items-center"><img
+                                        src="images\icon\navbar\icons8_instagram_30px.png" alt="icon insta"></a>
+                            </li>
                         </ul>
-                        <p></p>
                     </div>
                 </div>
             </div>
@@ -508,10 +499,9 @@
     </div>
 </section>
 <!--hết phần đội ngũ-->
-
 <!--khách hàng nói-->
 <section class="ftco-section testimony-section"
-    style="background-image: url('images/8-su-that-kinh-ngac-ve-sex-khong-phai-ai-cung-biet.png '); font-family: Roboto;"
+    style="background-image: url('images/trang-chu/background-phan-hoi-khach-hang.jpg');"
     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
@@ -530,13 +520,14 @@
             <div class="col-md-8 ftco-animate">
                 <div class="row ftco-animate">
                     <div class="col-md-12">
-                        <div class="carousel-testimony owl-carousel ftco-owl">
-                            <div class="item">
+                        <div class="fs-carousel-review"
+                            data-flickity='{ "draggable": true , "wrapAround": true , "pauseAutoPlayOnHover": false, "contain": true, "bgLazyLoad": true }'>
+                            <div class="carousel-cell-review">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('images/icon/vlady-logo-1024x726.png ')">
+                                        style="background-image: url('images/icon/vlady-logo-1024x726.png')">
                                         <span class="quote d-flex align-items-center justify-content-center">
-                                            <i class="icon-quote-left"></i>
+                                            <i class="fas fa-quote-left"></i>
                                         </span>
                                     </div>
                                     <div class="text text-center">
@@ -551,12 +542,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="carousel-cell-review">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('images/icon/vlady-logo-1024x726.png ')">
+                                        style="background-image: url('images/icon/vlady-logo-1024x726.png')">
                                         <span class="quote d-flex align-items-center justify-content-center">
-                                            <i class="icon-quote-left"></i>
+                                            <i class="fas fa-quote-left"></i>
                                         </span>
                                     </div>
                                     <div class="text text-center">
@@ -569,12 +560,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="carousel-cell-review">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('images/icon/vlady-logo-1024x726.png ')">
+                                        style="background-image: url('images/icon/vlady-logo-1024x726.png')">
                                         <span class="quote d-flex align-items-center justify-content-center">
-                                            <i class="icon-quote-left"></i>
+                                            <i class="fas fa-quote-left"></i>
                                         </span>
                                     </div>
                                     <div class="text text-center">
@@ -587,12 +578,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="carousel-cell-review">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                        style="background-image: url('images/icon/vlady-logo-1024x726.png ')">
+                                        style="background-image: url('images/icon/vlady-logo-1024x726.png')">
                                         <span class="quote d-flex align-items-center justify-content-center">
-                                            <i class="icon-quote-left"></i>
+                                            <i class="fas fa-quote-left"></i>
                                         </span>
                                     </div>
                                     <div class="text text-center">
@@ -604,20 +595,6 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- <div class="item">
-								<div class="testimony-wrap py-4 pb-5">
-									<div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-										<span class="quote d-flex align-items-center justify-content-center">
-											<i class="icon-quote-left"></i>
-										</span>
-									</div>
-									<div class="text text-center">
-										<p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-										<p class="name">Roger Scott</p>
-										<span class="position">Khách Hàng</span>
-									</div>
-								</div>
-							</div> --}}
                         </div>
                     </div>
                 </div>
@@ -626,9 +603,8 @@
     </div>
 </section>
 <!--Hết phần khách hàng-->
-
 <!--Đối tác-->
-<section class="ftco-section" style="font-family: Roboto;">
+<section class="ftco-section">
     <!--Carousel Wrapper-->
     <div class="container">
         <div class="row justify-content-center mb-5">
@@ -642,46 +618,19 @@
                 <p></p>
             </div>
         </div>
-        <div id="bs4-multi-slide-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col"><img src="images/unesco-logo.jpg" class="img-fluid" alt="1 slide">
-                        </div>
-                        <div class="col"><img src="images/unicef-logo.png" class="img-fluid" alt="2 slide">
-                        </div>
-                        <div class="col"><img src="images/nielsen-logo-1200x675-1.jpg" class="img-fluid" alt="3 slide">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col"><img src="images/download.png" class="img-fluid" alt="1 slide">
-                        </div>
-                        <div class="col"><img src="images/unesco-logo.jpg" class="img-fluid" alt="2 slide">
-                        </div>
-                        <div class="col"><img src="images/unicef-logo.png" class="img-fluid" alt="3 slide">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col"><img src="images/nielsen-logo-1200x675-1.jpg" class="img-fluid" alt="1 slide">
-                        </div>
-                        <div class="col"><img src="images/download.png" class="img-fluid" alt="2 slide">
-                        </div>
-                        <div class="col"><img src="images/unicef-logo.png" class="img-fluid" alt="3 slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="fs-carousel-counterpart"
+            data-flickity='{ "draggable": true , "wrapAround": true , "pauseAutoPlayOnHover": false, "freeScroll": true,"autoPlay": true, "prevNextButtons": false, "pageDots": false}'>
+            <div class="carousel-cell-counterpart"><img src="images/logo-doi-tac/unesco.jpg" alt="unesco"></div>
+            <div class="carousel-cell-counterpart"><img src="images/logo-doi-tac/unicef.jpg" alt="unicef"></div>
+            <div class="carousel-cell-counterpart"><img src="images/logo-doi-tac/nielsen.jpg" alt="nielsen"></div>
+            <div class="carousel-cell-counterpart"><img src="images/logo-doi-tac/scic.jpg" alt="scic"></div>
         </div>
     </div>
 </section>
 <!--hết phần đối tác-->
 
 <!--Phần tin tức-->
-<section class="ftco-section" style="font-family: Roboto;">
+<section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-7 heading-section text-center ftco-animate">
@@ -693,7 +642,8 @@
                 <h2 class="mb-3">NGHỆ THUẬT PHÒNG THE ĐỈNH CAO - NHUNG LADY</h2>
                 <p><a href="https://www.facebook.com/groups/nghethuatphongthedinhcao/"
                         class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Tham Gia Ngay</a></p>
-                <p>Cộng đồng chia sẻ mọi điều thầm kín cho chị em phụ nữ</p>
+                <p>Group CHẤT LƯỢNG HÀNG ĐẦU về giảng dạy và chia sẻ kỹ thuật tình dục cho các chị em phụ nữ đầu tiên
+                    tại VN!!!</p>
             </div>
         </div>
         <div class="row d-flex">
@@ -701,7 +651,7 @@
                 <div class="blog-entry align-self-stretch">
                     <a href="http://nuhoangphongthe.com/nu_hoang_phong_the/ban-ron-tren-giuong-giup-phu-nu-tre-lau/"
                         class="block-20"
-                        style="background-image: url('images/ban-ron-tren-giuong-giup-phu-nu-tre-lau.jpg ');">
+                        style="background-image: url('images/trang-chu/ban-ron-tren-giuong-giup-phu-nu-tre-lau.jpg');">
                     </a>
                     <div class="text py-4 d-flex">
                         <div class="desc">
@@ -717,7 +667,7 @@
                 <div class="blog-entry align-self-stretch">
                     <a href="http://nuhoangphongthe.com/nhap-mon-tinh-duc-hoc/diem-nhay-cam-kich-thich-chang-khi-yeu/"
                         class="block-20"
-                        style="background-image: url('images/diem-nhay-cam-kich-thich-chang-khi-yeu-1000x570.png ');">
+                        style="background-image: url('images/trang-chu/diem-nhay-cam-kich-thich-chang-khi-yeu-1000x570.jpg');">
                     </a>
                     <div class="text py-4 d-flex">
                         <div class="desc">
@@ -733,7 +683,7 @@
                 <div class="blog-entry align-self-stretch">
                     <a href="http://nuhoangphongthe.com/nu_hoang_phong_the/7-buoc-de-dua-chang-len-dinh-bang-mieng/"
                         class="block-20"
-                        style="background-image: url('images/7-buoc-de-dua-chang-len-dinh-bang-mieng-1000x570.png ');">
+                        style="background-image: url('images/trang-chu/7-buoc-de-dua-chang-len-dinh-bang-mieng-1000x570.jpg');">
                     </a>
                     <div class="text py-4 d-flex">
                         <div class="desc">

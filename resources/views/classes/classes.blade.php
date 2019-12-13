@@ -2,13 +2,13 @@
 
 @section('banner')
 <section class="hero-wrap js-fullheight">
-	<div class="overlay" style="background-image: url('{{ asset('images/banner-1.jpg') }} ');"
+	<div class="overlay" style="background-image: url('{{ asset('images/banner/banner-1.jpg') }} ');"
 		data-stellar-background-ratio="1"></div>
 </section>
 @endsection
 
 @section('content')
-<section class="ftco-section" style="font-family: Roboto;">
+<section class="ftco-section" >
 	<div class="container">
 		<div class="row justify-content-center mb-5">
 			<div class="col-md-10 heading-section text-center ftco-animate">

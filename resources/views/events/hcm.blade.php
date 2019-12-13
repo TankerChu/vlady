@@ -11,7 +11,7 @@
 @endsection
 
 @section('banner')
-<section class="ftco-section" style="font-family: Roboto;">
+<section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-10 heading-section text-center ftco-animate">

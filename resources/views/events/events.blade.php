@@ -1,18 +1,15 @@
 @extends('layouts/master')
-
 @section('banner')
 <!-- {{-- banner --}} -->
 <section class="hero-wrap js-fullheight">
     <div class="overlay"
-        style="background-image: url('{{ asset('images/banner-1.jpg') }} '); background-repeat: no-repeat;"
+        style="background-image: url('{{ asset('images/banner/banner-1.jpg') }} '); background-repeat: no-repeat;"
         data-stellar-background-ratio="1"></div>
 </section>
 <!-- {{-- hết banner --}} -->
 @endsection
-
-
 @section('content')
-<section class="ftco-section" style="font-family: Roboto;">
+<section class="ftco-section" >
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-10 heading-section text-center ftco-animate">
@@ -36,16 +33,16 @@
                         <h3 class="mb-3 event-heading"> {{ $events->name}} </h3>
                     </a>
                     <ul class="fa-ul" style="padding-left:20px">
-                        <li><span class="fa-li"><i class="fa fa-clock-o"></i></span>
+                        <li><span class="fa-li"><i class="far fa-clock"></i></span>
                             {{ $events->time }}
                         </li>
-                        <li><span class="fa-li"><i class="fa fa-map-marker"></i></span>
+                        <li><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span>
                             {{ $events->location_name }}
                         </li>
                         <li><span class="fa-li"><i class="fa fa-location-arrow"></i></span>
                             {{ $events->address }}
                         </li>
-                        <li><span class="fa-li"><i class="fa fa-money"></i></span>
+                        <li><span class="fa-li"><i class="fas fa-money-bill-wave"></i></span>
                             {{ number_format($events->price) }} VNĐ
                         </li>
                     </ul>
